@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "./scripts/preset-es2015",
+    "stage-0"
+  ],
+  "env": {
+    "development": {
+      "plugins": []
+    },
+    "production": {
+      "plugins": []
+    },
+    "test": {
+      "plugins": []
+    }
+  },
+  "plugins": [],
+  "sourceMaps": true
+}

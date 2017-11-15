@@ -1,0 +1,10 @@
+# Browsers that we support
+
+> 1%
+last 2 versions
+Chrome >= 41
+Firefox >= 41
+Safari >= 9
+iOS >= 7
+Android >= 4.1
+ie 9
