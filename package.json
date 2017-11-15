@@ -35,7 +35,6 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "extract-text-webpack-plugin": "^3.0.2",
-    "fetch-polyfill": "^0.8.2",
     "file-loader": "^1.1.5",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.6.1",

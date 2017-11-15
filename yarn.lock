@@ -2530,10 +2530,6 @@ faye-websocket@~0.11.0:
   dependencies:
     websocket-driver ">=0.5.1"
 
-fetch-polyfill@^0.8.2:
-  version "0.8.2"
-  resolved "http://10.210.200.230:8081/repository/williamhill-npm/fetch-polyfill/-/fetch-polyfill-0.8.2.tgz#3e1486442da5b53c43e66a6951eaa0fd5d23f1ac"
-
 figures@^2.0.0:
   version "2.0.0"
   resolved "http://10.210.200.230:8081/repository/williamhill-npm/figures/-/figures-2.0.0.tgz#3ab1a2d2a62c8bfb431a0c94cb797a2fce27c962"
