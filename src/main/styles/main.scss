@@ -1,5 +1,8 @@
 
+@import 'reset';
+
+@import 'colors';
+
 body {
-  background: #fff;
-  color: #00f;
+  background: $grey;
 }

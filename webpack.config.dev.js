@@ -12,7 +12,7 @@ module.exports = {
             'webpack-dev-server/client?http://localhost:8080',
             'webpack/hot/only-dev-server',
             'fetch-polyfill',
-            './src/main/index',
+            './src/main/index.jsx',
         ],
     },
     output: {
@@ -35,7 +35,7 @@ module.exports = {
     ],
     module: {
         rules: [{
-            test: /\.js$/,
+            test: /\.(js|jsx)$/,
             loader: 'babel-loader',
             include: resolve(__dirname),
             exclude: /node_modules/,
