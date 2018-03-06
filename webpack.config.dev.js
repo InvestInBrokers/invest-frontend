@@ -11,12 +11,13 @@ module.exports = {
         app: [
             'webpack-dev-server/client?http://localhost:8080',
             'webpack/hot/only-dev-server',
+            'fetch-polyfill',
             './src/main/index',
         ],
     },
     output: {
         path: resolve(__dirname, 'dist'),
-        filename: '[name].js', // cannot be [chunkhash] when using HMR
+        filename: 'app.js', // cannot be [chunkhash] when using HMR
         // cannot use [hash] because webpack-dev-middleware does not report re-bundling
         // chunkFilename: '[name].js',
     },
@@ -28,9 +29,6 @@ module.exports = {
             },
         }),
         new SpriteLoaderPlugin(),
-        new HtmlWebpackPlugin({
-            template: './src/main/index.html',
-        }),
         new webpack.NoEmitOnErrorsPlugin(),
         new webpack.NamedModulesPlugin(), // instead of HashedModuleIdsPlugin in dist
         new ExtractTextPlugin('[name].css'),
@@ -93,11 +91,5 @@ module.exports = {
     },
     resolve: {
         extensions: ['.js', '.css', '.scss', '.json'],
-    },
-    devServer: {
-        disableHostCheck: true,
-        headers: {
-            'Access-Control-Allow-Origin': '*',
-        },
     },
 };

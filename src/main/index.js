@@ -1,3 +1,10 @@
-import './styles/main.scss';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
-require('./index.html');
+class App extends Component {
+  render () {
+    return (<p> Hello React project</p>);
+  }
+}
+
+ReactDOM.render(<App/>, document.getElementById('app'));
