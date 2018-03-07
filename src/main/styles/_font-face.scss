@@ -1,6 +1,27 @@
 @font-face {
-  font-family: 'SourceSansPro';
+  font-family: 'RubikBold';
   font-style: normal;
   font-weight: normal;
-  src: url('../assets/fonts/SourceSansPro-Light.ttf?ok0mnl') format('truetype');
+  src: url('../assets/fonts/Rubik-Bold.ttf?ok0mnl') format('truetype');
+}
+
+@font-face {
+  font-family: 'RubikLight';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/Rubik-Light.ttf?ok0mnl') format('truetype');
+}
+
+@font-face {
+  font-family: 'RubikMedium';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/Rubik-Medium.ttf?ok0mnl') format('truetype');
+}
+
+@font-face {
+  font-family: 'RubikRegular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/Rubik-Regular.ttf?ok0mnl') format('truetype');
 }

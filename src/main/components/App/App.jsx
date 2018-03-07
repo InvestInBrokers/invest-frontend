@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Header from '../Header';
+import Dashboard from '../Dashboard';
 
 import './app.scss';
 
@@ -10,6 +11,7 @@ const App = () => (
             <Header />
         </div>
         <div className="app__content">
+            <Dashboard />
         </div>
     </div>
 );

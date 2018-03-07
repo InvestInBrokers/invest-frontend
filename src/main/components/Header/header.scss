@@ -1,0 +1,134 @@
+@import '../../styles/colors';
+
+.header {
+  background-color: $white;
+
+
+  &__container {
+    align-items: center;
+    display: flex;
+    height: 85px;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1200px;
+  }
+
+  &__logo-menu {
+    align-items: center;
+    display: flex;
+  }
+
+  &__logo {
+    margin-right: 62px;
+  }
+
+  &__menu-list {
+    display: flex;
+  }
+
+  &__menu-item {
+    color: $spun-pearl;
+    font-family: RubikRegular;
+    font-size: 15px;
+    margin: 0 17px;
+
+    &:hover {
+      color: $mulled-wine;
+      cursor: pointer;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--active {
+      color: $mulled-wine;
+      font-family: RubikMedium;
+    }
+  }
+
+  &__navigation {
+    align-items: center;
+    display: flex;
+  }
+
+  &__actions {
+    display: flex;
+    margin-right: 55px;
+  }
+
+  &__action {
+    color: $mulled-wine;
+    font-size: 20px;
+    margin: 0 15px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--alerts {
+      position: relative;
+    }
+  }
+
+  &__alerts-count {
+    align-items: center;
+    background: linear-gradient(0, $cornflower-blue 0%, $cornflower-blue-dark 100%);
+    border-radius: 50%;
+    box-shadow: 0 2px 6.65px 0.35px rgba(52, 84, 245, 0.3);
+    color: $white;
+    display: flex;
+    font-family: RubikMedium;
+    font-size: 11px;
+    height: 19px;
+    justify-content: center;
+    left: 9px;
+    position: absolute;
+    top: -7px;
+    width: 19px;
+  }
+
+  &__avatar {
+    position: relative;
+  }
+
+  &__avatar-img {
+    border-radius: 100%;
+    height: 45px;
+    margin-right: 14px;
+    width: 45px;
+  }
+
+  &__user-level {
+    background: linear-gradient(0, $forest-green 0%, $de-york 100%);
+    border-radius: 4px;
+    bottom: -7px;
+    box-shadow: 0 2px 6.65px 0.35px rgba($forest-green, 0.3);
+    color: $white;
+    font-family: RubikMedium;
+    font-size: 11px;
+    left: -13px;
+    padding: 4px 5px;
+    position: absolute;
+  }
+
+  &__user-name {
+    color: $mulled-wine;
+    font-family: RubikRegular;
+    font-size: 15px;
+  }
+
+  &__since {
+    color: $spun-pearl;
+    font-family: RubikRegular;
+    font-size: 12px;
+  }
+}
