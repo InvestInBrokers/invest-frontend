@@ -10,7 +10,8 @@
     "jest": true
   },
   "plugins": [
-    "import"
+    "import",
+    "lodash-fp"
   ],
   "rules": {
     "generator-star-spacing": [
@@ -50,6 +51,17 @@
           "Record"
         ]
       }
+    ],
+    "react/jsx-filename-extension": [
+      0
+    ],
+    "react/jsx-indent": [
+      2,
+      4
+    ],
+    "react/jsx-indent-props": [
+      2,
+      4
     ]
   },
   "globals": {

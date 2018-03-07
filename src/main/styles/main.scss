@@ -1,8 +1,14 @@
 
 @import 'reset';
 
+@import 'font-face';
+
+
+@import 'font-weights';
+
 @import 'colors';
 
 body {
   background: $grey;
+  font-family: 'SourceSansPro';
 }

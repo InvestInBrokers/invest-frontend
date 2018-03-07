@@ -3,16 +3,16 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const { resolve } = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     devtool: 'source-map',
     entry: {
         app: [
+            './vendor/babel-polyfill.min',
+            'fetch-polyfill',
             'webpack-dev-server/client?http://localhost:8080',
             'webpack/hot/only-dev-server',
-            'fetch-polyfill',
-            './src/main/index.jsx',
+            './src/main/index',
         ],
     },
     output: {
@@ -35,7 +35,7 @@ module.exports = {
     ],
     module: {
         rules: [{
-            test: /\.(js|jsx)$/,
+            test: /\.jsx?$/,
             loader: 'babel-loader',
             include: resolve(__dirname),
             exclude: /node_modules/,
@@ -90,6 +90,6 @@ module.exports = {
         }],
     },
     resolve: {
-        extensions: ['.js', '.css', '.scss', '.json'],
+        extensions: ['.js', '.jsx', '.css', '.scss', '.json'],
     },
 };

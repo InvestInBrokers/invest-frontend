@@ -6,13 +6,28 @@
   ],
   "env": {
     "development": {
-      "plugins": []
+      "plugins": [
+        "lodash"
+      ]
     },
     "production": {
-      "plugins": []
+      "plugins": [
+        "lodash",
+        "transform-react-constant-elements",
+        "transform-react-inline-elements",
+        [
+          "transform-react-remove-statics",
+          {
+            "propTypes": true,
+            "defaultProps": true
+          }
+        ]
+      ]
     },
     "test": {
-      "plugins": []
+      "plugins": [
+        "rewire"
+      ]
     }
   },
   "plugins": [],
