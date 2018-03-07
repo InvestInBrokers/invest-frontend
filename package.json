@@ -1,5 +1,5 @@
 {
-  "name": "webpack",
+  "name": "project-invest",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -7,11 +7,13 @@
     "clean:all": "rm -rf dist",
     "clean:server": "rm -rf dist/main",
     "clean:browser": "rm -rf dist/www",
-    "lint": "eslint src/** *.js",
+    "lint": "eslint src/**",
     "lint:fix": "eslint src/** *.js --fix",
     "start": "BABEL_ENV=development webpack-dev-server --host 0.0.0.0 --hot --config webpack.config.dev.js",
     "stylelint": "stylelint 'src/**/*.scss' --syntax scss",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretest": "run-p lint stylelint",
+    "test": "BABEL_ENV=test nyc npm run jest",
+    "jest": "jest",
     "compile": "BABEL_ENV=browser webpack --config webpack.config.prod.js"
   },
   "author": "Kamil Kruczek",
@@ -31,28 +33,37 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.2",
+    "babel-jest": "^22.4.1",
     "babel-loader": "^7.1.2",
     "babel-plugin-lodash": "^3.3.2",
+    "babel-plugin-rewire": "^1.1.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "chai-enzyme": "^0.8.0",
     "clean-webpack-plugin": "^0.1.17",
     "copy-webpack-plugin": "^4.2.0",
     "css-hot-loader": "^1.3.3",
     "css-loader": "^0.28.7",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.11.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-lodash-fp": "^2.1.3",
     "eslint-plugin-react": "^7.7.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "fetch-polyfill": "^0.8.2",
     "file-loader": "^1.1.5",
     "install": "^0.10.4",
+    "jest": "^22.4.2",
     "node-sass": "^4.6.1",
     "npm": "^5.7.1",
+    "npm-run-all": "^4.1.2",
+    "nyc": "^11.4.1",
     "postcss-loader": "^2.0.8",
     "postcss-nested": "^2.1.2",
     "postcss-scss": "^1.0.2",
@@ -70,5 +81,48 @@
   },
   "engines": {
     "node": ">=6.9"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less|styl|scss|sass)$": "<rootDir>/mock/styleMock.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/mock/fileMock.js",
+      "config": "<rootDir>/src/test/index.js"
+    },
+    "timers": "fake",
+    "testMatch": [
+      "**/*.test.js?(x)"
+    ],
+    "roots": [
+      "<rootDir>/src"
+    ]
+  },
+  "nyc": {
+    "lines": 0,
+    "statements": 0,
+    "functions": 0,
+    "branches": 0,
+    "include": [
+      "src/main/**/*.js",
+      "src/main/**/*.jsx"
+    ],
+    "exclude": [
+      "flow-typed/**"
+    ],
+    "reporter": [
+      "html",
+      "text"
+    ],
+    "require": [
+      "babel-register"
+    ],
+    "extension": [
+      ".jsx",
+      ".js"
+    ],
+    "sourceMap": true,
+    "cache": false,
+    "all": true,
+    "check-coverage": true,
+    "report-dir": "./coverage"
   }
 }
