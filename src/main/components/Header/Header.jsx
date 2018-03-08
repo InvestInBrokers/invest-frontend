@@ -1,9 +1,10 @@
 import React from 'react';
 
 import Translate from '../Translate';
+import UserLevel from '../UserLevel';
+import AvatarImage from '../AvatarImage';
 
 import logo from '../../assets/images/invest-logo.png';
-import avatar from '../../assets/images/avatar-example.jpg';
 
 import './header.scss';
 
@@ -39,8 +40,12 @@ const Header = () => (
                     </div>
                 </div>
                 <div className="header__avatar">
-                    <img className="header__avatar-img" src={avatar} alt="avatar" />
-                    <span className="header__user-level">Lvl 1</span>
+                    <span className="header__avatar-img">
+                        <AvatarImage size={AvatarImage.size.BIG} />
+                    </span>
+                    <span className="header__user-level">
+                        <UserLevel level={1} />
+                    </span>
                 </div>
                 <div className="header__user">
                     <div className="header__user-name">

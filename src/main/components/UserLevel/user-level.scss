@@ -1,0 +1,11 @@
+@import '../../styles/colors';
+
+.user-level {
+  background: linear-gradient(0, $forest-green 0%, $de-york 100%);
+  border-radius: 4px;
+  box-shadow: 0 2px 6.65px 0.35px rgba($forest-green, 0.3);
+  color: $white;
+  font-family: RubikMedium;
+  font-size: 11px;
+  padding: 4px 5px;
+}
