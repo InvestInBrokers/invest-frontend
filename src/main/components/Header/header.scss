@@ -101,22 +101,12 @@
   }
 
   &__avatar-img {
-    border-radius: 100%;
-    height: 45px;
     margin-right: 14px;
-    width: 45px;
   }
 
   &__user-level {
-    background: linear-gradient(0, $forest-green 0%, $de-york 100%);
-    border-radius: 4px;
     bottom: -7px;
-    box-shadow: 0 2px 6.65px 0.35px rgba($forest-green, 0.3);
-    color: $white;
-    font-family: RubikMedium;
-    font-size: 11px;
     left: -13px;
-    padding: 4px 5px;
     position: absolute;
   }
 
