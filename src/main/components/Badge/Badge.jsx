@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './user-level.scss';
+import './badge.scss';
 
-const UserLevel = ({ level }) => (
-    <span className="user-level">
-        Lvl {level}
+const Badge = ({ text }) => (
+    <span className="badge">
+        {text}
     </span>
 );
 
-UserLevel.propTypes = {
-    level: PropTypes.number.isRequired,
+Badge.propTypes = {
+    text: PropTypes.string.isRequired,
 };
 
-export default UserLevel;
+export default Badge;

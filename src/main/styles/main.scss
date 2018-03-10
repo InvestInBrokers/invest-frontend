@@ -9,5 +9,6 @@
 
 body {
   background: $grey;
-  font-family: 'RubikLight';
+
+  @include font-weight-light;
 }

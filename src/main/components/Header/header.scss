@@ -1,4 +1,5 @@
 @import '../../styles/colors';
+@import '../../styles/font-weights';
 
 .header {
   background-color: $white;
@@ -28,9 +29,10 @@
 
   &__menu-item {
     color: $spun-pearl;
-    font-family: RubikRegular;
     font-size: 15px;
     margin: 0 17px;
+
+    @include font-weight-regular;
 
     &:hover {
       color: $mulled-wine;
@@ -47,7 +49,8 @@
 
     &--active {
       color: $mulled-wine;
-      font-family: RubikMedium;
+
+      @include font-weight-medium;
     }
   }
 
@@ -86,7 +89,6 @@
     box-shadow: 0 2px 6.65px 0.35px rgba(52, 84, 245, 0.3);
     color: $white;
     display: flex;
-    font-family: RubikMedium;
     font-size: 11px;
     height: 19px;
     justify-content: center;
@@ -112,13 +114,15 @@
 
   &__user-name {
     color: $mulled-wine;
-    font-family: RubikRegular;
     font-size: 15px;
+
+    @include font-weight-regular;
   }
 
   &__since {
     color: $spun-pearl;
-    font-family: RubikRegular;
     font-size: 12px;
+
+    @include font-weight-regular;
   }
 }

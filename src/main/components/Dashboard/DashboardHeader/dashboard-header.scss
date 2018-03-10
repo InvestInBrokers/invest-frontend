@@ -1,4 +1,5 @@
 @import '../../../styles/colors';
+@import '../../../styles/font-weights';
 
 .dashboard-header {
   align-items: flex-end;
@@ -8,8 +9,9 @@
 
   &__title {
     color: $mulled-wine;
-    font-family: RubikRegular;
     font-size: 25px;
+
+    @include font-weight-regular;
   }
 
   &__followers {
@@ -33,9 +35,10 @@
 
   &__followers-text {
     color: $spun-pearl;
-    font-family: RubikRegular;
     font-size: 14px;
     padding: 0 14px;
+
+    @include font-weight-regular;
   }
 }
 

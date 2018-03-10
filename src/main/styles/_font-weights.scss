@@ -1,15 +1,15 @@
-//@mixin font-weight-bold {
-//  font-family: RubikBold, Helvetica, sans-serif;
-//}
-//
-//@mixin font-weight-light {
-//  font-family: RubikLight, Helvetica, sans-serif;
-//}
-//
-//@mixin font-weight-Medium {
-//  font-family: RubikMedium, Helvetica, sans-serif;
-//}
-//
-//@mixin font-weight-Regular {
-//  font-family: RubikRegular, Helvetica, sans-serif;
-//}
+@mixin font-weight-light {
+  font-family: RubikLight, Arial, Helvetica, sans-serif;
+}
+
+@mixin font-weight-medium {
+  font-family: RubikMedium, Arial, Helvetica, sans-serif;
+}
+
+@mixin font-weight-regular {
+  font-family: RubikRegular, Arial, Helvetica, sans-serif;
+}
+
+@mixin font-weight-bold {
+  font-family: RubikBold, Arial, Helvetica, sans-serif;
+}

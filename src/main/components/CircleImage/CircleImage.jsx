@@ -4,16 +4,16 @@ import classNames from 'classnames';
 
 import avatar from '../../assets/images/avatar-example.jpg';
 
-import './avatar-image.scss';
+import './circle-image.scss';
 
 const avatarSize = {
-    SMALL: 'avatar-img--small',
-    BIG: 'avatar-img--big',
+    SMALL: 'circle-img--small',
+    BIG: 'circle-img--big',
 };
 
-const AvatarImage = ({ size, avatarImg = avatar }) => {
+const CircleImage = ({ size, avatarImg = avatar }) => {
     const className = classNames(
-        'avatar-img',
+        'circle-img',
         size,
     );
 
@@ -22,9 +22,9 @@ const AvatarImage = ({ size, avatarImg = avatar }) => {
     );
 };
 
-AvatarImage.size = avatarSize;
+CircleImage.size = avatarSize;
 
-AvatarImage.propTypes = {
+CircleImage.propTypes = {
     size: PropTypes.string.isRequired,
     avatarImg: PropTypes.oneOfType([
         PropTypes.object,
@@ -32,8 +32,8 @@ AvatarImage.propTypes = {
     ]),
 };
 
-AvatarImage.defaultProps = {
+CircleImage.defaultProps = {
     avatarImg: avatar,
 };
 
-export default AvatarImage;
+export default CircleImage;

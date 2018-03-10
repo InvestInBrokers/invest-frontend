@@ -1,0 +1,23 @@
+@import '../../styles/colors';
+@import '../../styles/font-weights';
+
+.circle-statistic {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+
+  &__content {
+    align-items: center;
+    border: 1px solid $jungle-green;
+    border-radius: 100%;
+    color: $jungle-green;
+    display: flex;
+    font-size: 27px;
+    height: 123px;
+    justify-content: center;
+    width: 123px;
+
+    @include font-weight-light;
+  }
+}
