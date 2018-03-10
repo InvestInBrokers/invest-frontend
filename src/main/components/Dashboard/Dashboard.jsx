@@ -1,26 +1,17 @@
 import React from 'react';
 
-import logotyp from '../../assets/images/logotyp.png';
+import DashboardHeader from './DashboardHeader';
+import Tiles from '../Tiles';
 
 import './dashboard.scss';
 
-const Header = () => (
+const Dashboard = () => (
     <div className="dashboard">
-        <div className="dashboard__header">
-            <div className="dashboard__title">
-                Dashboard
-            </div>
-            <div className="dashboard__followers">
-                <div className="dashboard__followers-number">
-                    <img className="dashboard__followers-logotyp" src={logotyp} alt="logotyp" />
-                    <span>242</span>
-                </div>
-                <div className="dashboard__followers-text">
-                    <span>Followers</span>
-                </div>
-            </div>
+        <DashboardHeader />
+        <div className="dashboard__content">
+            <Tiles />
         </div>
     </div>
 );
 
-export default Header;
+export default Dashboard;
