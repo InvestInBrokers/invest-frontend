@@ -26,7 +26,14 @@ AvatarImage.size = avatarSize;
 
 AvatarImage.propTypes = {
     size: PropTypes.string.isRequired,
-    avatarImg: PropTypes.shape.isRequired,
+    avatarImg: PropTypes.oneOfType([
+        PropTypes.object,
+        PropTypes.string,
+    ]),
+};
+
+AvatarImage.defaultProps = {
+    avatarImg: avatar,
 };
 
 export default AvatarImage;
