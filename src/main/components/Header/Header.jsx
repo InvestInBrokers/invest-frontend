@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Translate from '../Translate';
-import UserLevel from '../UserLevel';
-import AvatarImage from '../AvatarImage';
+import Badge from '../Badge';
+import CircleImage from '../CircleImage';
 
 import logo from '../../assets/images/invest-logo.png';
 
@@ -41,10 +41,10 @@ const Header = () => (
                 </div>
                 <div className="header__avatar">
                     <span className="header__avatar-img">
-                        <AvatarImage size={AvatarImage.size.BIG} />
+                        <CircleImage size={CircleImage.size.BIG} />
                     </span>
                     <span className="header__user-level">
-                        <UserLevel level={1} />
+                        <Badge text="Lvl 1" />
                     </span>
                 </div>
                 <div className="header__user">

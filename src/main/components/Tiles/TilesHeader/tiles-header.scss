@@ -1,0 +1,16 @@
+@import '../../../styles/colors';
+@import '../../../styles/font-weights';
+
+.tiles-header {
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  padding: 38px 38px 0;
+
+  @include font-weight-regular;
+
+  &__title {
+    color: $spun-pearl;
+  }
+}

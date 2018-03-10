@@ -1,0 +1,61 @@
+@import '../../../styles/colors';
+@import '../../../styles/font-weights';
+
+.tiles-statistics {
+  color: $spun-pearl;
+  display: flex;
+  font-size: 12px;
+
+  @include font-weight-regular;
+
+  &__ul {
+    display: flex;
+
+    &--periods {
+      border: 1px solid $athens-gray;
+      border-radius: 4px;
+    }
+  }
+
+  &__li {
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 20px;
+    }
+
+    &--active {
+      color: $mulled-wine;
+    }
+  }
+
+  &__period {
+    align-items: center;
+    border-right: 1px solid $athens-gray;
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px;
+
+    &:last-child {
+      border: none;
+    }
+
+    &--active {
+      background: linear-gradient(0deg, $cornflower-blue 0%, $malibu 100%);
+      border-radius: 4px 0 0 4px;
+      color: $white;
+    }
+  }
+
+  &__circle {
+    margin-right: 5px;
+
+    &--open {
+      color: $heliotrope;
+    }
+
+    &--close {
+      color: $royal-blue;
+    }
+  }
+}

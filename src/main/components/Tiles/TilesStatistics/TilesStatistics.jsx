@@ -1,0 +1,25 @@
+import React from 'react';
+
+import './tiles-statistics.scss';
+
+const TilesStatistics = () => (
+    <div className="tiles-statistics">
+        <ul className="tiles-statistics__ul">
+            <li className="tiles-statistics__li">
+                <i className="fa fa-circle tiles-statistics__circle tiles-statistics__circle--open" />
+                <span>Open</span>
+            </li>
+            <li className="tiles-statistics__li">
+                <i className="fa fa-circle tiles-statistics__circle tiles-statistics__circle--close" />
+                <span>Close</span>
+            </li>
+        </ul>
+        <ul className="tiles-statistics__ul tiles-statistics__ul--periods">
+            <li className="tiles-statistics__period tiles-statistics__period--active">Week</li>
+            <li className="tiles-statistics__period">Month</li>
+            <li className="tiles-statistics__period">Year</li>
+        </ul>
+    </div>
+);
+
+export default TilesStatistics;

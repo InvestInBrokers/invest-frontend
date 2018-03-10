@@ -1,0 +1,70 @@
+@import '../../styles/colors';
+@import '../../styles/font-weights';
+
+.table {
+  width: 100%;
+
+  @include font-weight-regular;
+
+  &__header {
+    color: $spun-pearl;
+    font-size: 12px;
+    text-align: right;
+  }
+
+  &__body {
+    color: $spun-pearl;
+    font-size: 15px;
+    text-align: right;
+  }
+
+  &__tr {
+    border-bottom: 1px solid $white-lilac;
+
+    &:last-child {
+      border: 0 solid #000;
+    }
+  }
+
+  &__td {
+    padding: 6px 0;
+    vertical-align: middle;
+
+    &--big-padding {
+      padding: 10px 0;
+    }
+
+    &--mulled-wine {
+      color: $mulled-wine;
+    }
+
+    &--text-left {
+      text-align: left;
+    }
+
+    &--green {
+      color: $forest-green;
+    }
+
+    &--width-20 {
+      width: 20%;
+    }
+
+    &--width-17 {
+      width: 17%;
+    }
+  }
+
+  &__circle-img {
+    margin-right: 16px;
+  }
+
+  &__fullname {
+    margin-right: 9px;
+  }
+
+  &--center-elem {
+    align-items: center;
+    display: flex;
+  }
+}
