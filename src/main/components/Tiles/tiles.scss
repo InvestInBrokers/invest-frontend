@@ -3,42 +3,50 @@
 .tiles {
   background: $white;
   border-radius: 4px;
+  box-shadow: 0 0 24px 6px rgba(130, 129, 147, 0.06);
   display: flex;
   flex-direction: column;
-
-  margin: 20px;
-  width: 600px;
+  width: 590px;
 
   &__header {
+    color: $spun-pearl;
     font-size: 20px;
-    padding: 20px 20px 0;
+    padding: 38px 38px 0;
   }
 
   &__content {
-    padding: 20px;
+    padding: 14px 38px;
   }
 
   &__more {
+    background: linear-gradient(to bottom, #f9f9fd 0%, $white 37%);
+    border-top: 1px solid $white-lilac;
+    color: $royal-blue;
+    font-family: RubikRegular;
+    font-size: 12px;
     padding: 15px 0;
     text-align: center;
   }
 }
 
 .table {
+  font-family: RubikRegular;
   width: 100%;
 
   &__header {
-    font-size: 14px;
-    margin: 5px 0;
+    color: $spun-pearl;
+    font-size: 12px;
     text-align: right;
   }
 
   &__body {
+    color: $spun-pearl;
+    font-size: 15px;
     text-align: right;
   }
 
   &__tr {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid $white-lilac;
 
     &:last-child {
       border: 0 solid #000;
@@ -46,9 +54,12 @@
   }
 
   &__td {
-    padding: 5px 0;
+    padding: 6px 0;
+    vertical-align: middle;
 
     &--first {
+      color: $mulled-wine;
+      font-size: 15px;
       text-align: left;
     }
 
@@ -58,6 +69,15 @@
   }
 
   &__avatar-img {
-    margin-right: 5px;
+    margin-right: 16px;
+  }
+
+  &__fullname {
+    margin-right: 9px;
+  }
+
+  &--center-elem {
+    align-items: center;
+    display: flex;
   }
 }

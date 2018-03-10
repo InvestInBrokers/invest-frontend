@@ -25,7 +25,7 @@ const AvatarImage = ({ size, avatarImg = avatar }) => {
 AvatarImage.size = avatarSize;
 
 AvatarImage.propTypes = {
-    size: PropTypes.number.isRequired,
+    size: PropTypes.string.isRequired,
     avatarImg: PropTypes.shape.isRequired,
 };
 
