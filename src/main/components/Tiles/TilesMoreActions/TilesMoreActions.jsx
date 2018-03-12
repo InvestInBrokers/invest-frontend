@@ -1,10 +1,12 @@
 import React from 'react';
 
+import EllipsisV from '../../icons/EllipsisV';
+
 import './tiles-more-actions.scss';
 
 const TilesMoreActions = () => (
     <div className="tiles-more-actions">
-        <i className="fa fa-ellipsis-v" />
+        <EllipsisV />
     </div>
 );
 

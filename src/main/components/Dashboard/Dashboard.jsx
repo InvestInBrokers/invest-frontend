@@ -7,6 +7,7 @@ import TilesMoreActions from '../Tiles/TilesMoreActions';
 import TilesStatistics from '../Tiles/TilesStatistics';
 import Table from '../Table';
 import CircleStatistic from '../CircleStatistic';
+import CircleIcon from '../icons/Circle';
 
 import './dashboard.scss';
 
@@ -23,7 +24,7 @@ const Dashboard = () => (
                 size={Tiles.size.TWO_X}
             >
                 <div>
-                    Dupa
+                    Statistics
                 </div>
             </Tiles>
             <Tiles
@@ -36,11 +37,15 @@ const Dashboard = () => (
                         <ul className="trades-nav__ul">
                             <li className="trades-nav__li trades-nav__li--active">All</li>
                             <li className="trades-nav__li">
-                                <i className="fa fa-circle trades-nav__circle trades-nav__circle--open" />
+                                <span className="trades-nav__circle trades-nav__circle--open">
+                                    <CircleIcon />
+                                </span>
                                 <span>Open</span>
                             </li>
                             <li className="trades-nav__li">
-                                <i className="fa fa-circle trades-nav__circle trades-nav__circle--close" />
+                                <span className="trades-nav__circle trades-nav__circle--close">
+                                    <CircleIcon />
+                                </span>
                                 <span>Close</span>
                             </li>
                         </ul>
@@ -49,6 +54,8 @@ const Dashboard = () => (
                         name={yourtradesTable.name}
                         head={yourtradesTable.head}
                         body={yourtradesTable.body}
+                        bodyClass={yourtradesTable.bodyClass}
+                        headClass={yourtradesTable.headClass}
                     />
                 </div>
             </Tiles>
@@ -61,6 +68,8 @@ const Dashboard = () => (
                     name={successfulTradersTable.name}
                     head={successfulTradersTable.head}
                     body={successfulTradersTable.body}
+                    bodyClass={successfulTradersTable.bodyClass}
+                    headClass={successfulTradersTable.headClass}
                 />
             </Tiles>
             <Tiles
@@ -72,6 +81,8 @@ const Dashboard = () => (
                     name={depositTable.name}
                     head={depositTable.head}
                     body={depositTable.body}
+                    bodyClass={depositTable.bodyClass}
+                    headClass={depositTable.headClass}
                 />
             </Tiles>
             <Tiles

@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import avatar from '../../assets/images/avatar-example.jpg';
-
 import './circle-image.scss';
 
 const avatarSize = {
@@ -11,7 +9,7 @@ const avatarSize = {
     BIG: 'circle-img--big',
 };
 
-const CircleImage = ({ size, avatarImg = avatar }) => {
+const CircleImage = ({ size, avatarImg }) => {
     const className = classNames(
         'circle-img',
         size,
@@ -29,11 +27,7 @@ CircleImage.propTypes = {
     avatarImg: PropTypes.oneOfType([
         PropTypes.object,
         PropTypes.string,
-    ]),
-};
-
-CircleImage.defaultProps = {
-    avatarImg: avatar,
+    ]).isRequired,
 };
 
 export default CircleImage;

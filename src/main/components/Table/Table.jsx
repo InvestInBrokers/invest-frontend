@@ -38,23 +38,40 @@ const renderBody = (body, name) => (
     })
 );
 
-const Table = ({ head, body, name }) => (
-    <table className="table">
-        <thead className="table__header">
-            <tr>
-                {renderHeader(head, name)}
-            </tr>
-        </thead>
-        <tbody className="table__body">
-            {renderBody(body, name)}
-        </tbody>
-    </table>
-);
+const Table = ({ head, body, name, bodyClass, headClass }) => {
+    const tHeadClassName = classNames(
+        'table__head',
+        headClass,
+    );
+    const tBodyClassName = classNames(
+        'table__body',
+        bodyClass,
+    );
+    return (
+        <table className="table">
+            <thead className={tHeadClassName}>
+                <tr>
+                    {renderHeader(head, name)}
+                </tr>
+            </thead>
+            <tbody className={tBodyClassName}>
+                {renderBody(body, name)}
+            </tbody>
+        </table>
+    );
+}
 
 Table.propTypes = {
     head: PropTypes.arrayOf(PropTypes.object).isRequired,
     body: PropTypes.arrayOf(PropTypes.object).isRequired,
     name: PropTypes.string.isRequired,
+    bodyClass: PropTypes.string,
+    headClass: PropTypes.string,
+};
+
+Table.defaultProps = {
+    bodyClass: '',
+    headClass: '',
 };
 
 export default Table;

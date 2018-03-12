@@ -2,13 +2,43 @@
 @import '../../styles/font-weights';
 
 .badge {
-  background: linear-gradient(0, $forest-green 0%, $de-york 100%);
   border-radius: 4px;
-  box-shadow: 0 2px 6.65px 0.35px rgba($forest-green, 0.3);
   color: $white;
   display: inline-block;
   font-size: 11px;
-  padding: 4px 5px;
 
   @include font-weight-regular;
+
+  &--normal {
+    padding: 4px 5px;
+  }
+
+  &--big {
+    padding: 5.5px 8px;
+  }
+
+  &--green {
+    background: linear-gradient(0, $forest-green 0%, $de-york 100%);
+    box-shadow: 0 2px 6.65px 0.35px rgba($forest-green, 0.3);
+  }
+
+  &--red {
+    background: linear-gradient(0, rgb(243, 14, 79) 1%, rgb(246, 66, 112) 100%);
+    box-shadow: 0 2px 6.65px 0.35px rgba(238, 54, 119, 0.3);
+  }
+
+  &--grey {
+    background: linear-gradient(0, rgb(200, 197, 221) 0%, rgb(221, 219, 230) 100%);
+    box-shadow: 0 2px 6.65px 0.35px rgba(190, 187, 207, 0.3);
+  }
+
+  &--blue {
+    background: linear-gradient(0, rgb(40, 168, 234) 0%, rgb(96, 192, 242) 100%);
+    box-shadow: 0 2px 6.65px 0.35px rgba(32, 157, 222, 0.3);
+  }
+
+  &--green-blue {
+    background: linear-gradient(0, rgb(22, 211, 173) 0%, rgb(93, 222, 211) 99%);
+    box-shadow: 0 2px 6.65px 0.35px rgba(35, 210, 183, 0.3);
+  }
 }

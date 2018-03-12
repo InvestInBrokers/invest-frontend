@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logotyp from '../../../assets/images/logotyp.png';
+import LogoTyp from '../../icons/LogoTyp';
 
 import './dashboard-header.scss';
 
@@ -11,7 +11,10 @@ const DashboardHeader = () => (
         </div>
         <div className="dashboard-header__followers">
             <div className="dashboard-header__followers-number">
-                <img className="dashboard-header__followers-logotyp" src={logotyp} alt="logotyp" />
+                {/*<img className="dashboard-header__followers-logotyp" src={logotyp} alt="logotyp" />*/}
+                <span className="dashboard-header__followers-logotyp">
+                    <LogoTyp />
+                </span>
                 <span>242</span>
             </div>
             <div className="dashboard-header__followers-text">
