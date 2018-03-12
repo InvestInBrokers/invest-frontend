@@ -1,6 +1,6 @@
 export default {
     test: {
-        test: 'test',
+        test: 'Support',
     },
 };
 

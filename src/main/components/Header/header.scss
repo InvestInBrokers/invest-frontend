@@ -21,6 +21,10 @@
 
   &__logo {
     margin-right: 62px;
+
+    svg {
+      width: 103px;
+    }
   }
 
   &__menu-list {
@@ -30,7 +34,7 @@
   &__menu-item {
     color: $spun-pearl;
     font-size: 15px;
-    margin: 0 17px;
+    margin: 0 16px;
 
     @include font-weight-regular;
 
@@ -65,9 +69,13 @@
   }
 
   &__action {
-    color: $mulled-wine;
-    font-size: 20px;
-    margin: 0 15px;
+    align-items: center;
+    display: flex;
+    margin: 0 13px;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     &:first-child {
       margin-left: 0;
@@ -75,6 +83,11 @@
 
     &:last-child {
       margin-right: 0;
+    }
+
+    svg {
+      fill: $mulled-wine;
+      width: 21px;
     }
 
     &--alerts {
@@ -92,9 +105,9 @@
     font-size: 11px;
     height: 19px;
     justify-content: center;
-    left: 9px;
+    left: 12px;
     position: absolute;
-    top: -7px;
+    top: -10px;
     width: 19px;
   }
 
@@ -103,11 +116,11 @@
   }
 
   &__avatar-img {
-    margin-right: 14px;
+    margin-right: 10px;
   }
 
   &__user-level {
-    bottom: -7px;
+    bottom: -4px;
     left: -13px;
     position: absolute;
   }

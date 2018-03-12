@@ -4,7 +4,13 @@ import Translate from '../Translate';
 import Badge from '../Badge';
 import CircleImage from '../CircleImage';
 
-import logo from '../../assets/images/invest-logo.png';
+import EnvelopeIcon from '../icons/Envelope';
+import CogeIcon from '../icons/Cog';
+import BellIcon from '../icons/Bell';
+
+import AvatarImage from '../../assets/images/claire-ridley-vinopolis.jpg';
+
+import Logo from '../icons/Logo';
 
 import './header.scss';
 
@@ -13,7 +19,7 @@ const Header = () => (
         <div className="header__container">
             <div className="header__logo-menu">
                 <div className="header__logo">
-                    <img src={logo} alt="logo" />
+                    <Logo />
                 </div>
                 <div className="header__menu">
                     <ul className="header__menu-list">
@@ -29,22 +35,22 @@ const Header = () => (
             <div className="header__navigation">
                 <div className="header__actions">
                     <div className="header__action header__action--messages">
-                        <i className="far fa-envelope" />
+                        <EnvelopeIcon />
                     </div>
                     <div className="header__action header__action--settings">
-                        <i className="fa fa-cog" />
+                        <CogeIcon />
                     </div>
                     <div className="header__action header__action--alerts">
-                        <i className="far fa-bell" />
+                        <BellIcon />
                         <span className="header__alerts-count">2</span>
                     </div>
                 </div>
                 <div className="header__avatar">
                     <span className="header__avatar-img">
-                        <CircleImage size={CircleImage.size.BIG} />
+                        <CircleImage avatarImg={AvatarImage} size={CircleImage.size.BIG} />
                     </span>
                     <span className="header__user-level">
-                        <Badge text="Lvl 1" />
+                        <Badge text="Lvl 1" color={Badge.color.GREEN} />
                     </span>
                 </div>
                 <div className="header__user">

@@ -9,6 +9,7 @@
   @include font-weight-regular;
 
   &__ul {
+    align-items: center;
     display: flex;
 
     &--periods {
@@ -36,8 +37,12 @@
     justify-content: center;
     padding: 10px 15px;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     &:last-child {
-      border: none;
+      border-right-width: 0;
     }
 
     &--active {
@@ -51,11 +56,19 @@
     margin-right: 5px;
 
     &--open {
-      color: $heliotrope;
+      fill: $heliotrope;
+
+      svg {
+        width: 10px;
+      }
     }
 
     &--close {
-      color: $royal-blue;
+      fill: $royal-blue;
+
+      svg {
+        width: 10px;
+      }
     }
   }
 }

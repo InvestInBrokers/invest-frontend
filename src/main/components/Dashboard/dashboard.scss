@@ -3,6 +3,8 @@
 
 
 .dashboard {
+  margin-top: 48px;
+
   &__content {
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +16,7 @@
 .trades-nav {
   color: $spun-pearl;
   font-size: 12px;
-  padding-top: 10px;
+  padding-top: 12px;
 
   @include font-weight-regular;
 
@@ -24,8 +26,12 @@
   }
 
   &__li {
-    margin-right: 40px;
-    padding-bottom: 20px;
+    margin-right: 35px;
+    padding-bottom: 21px;
+
+    &:first-child {
+      margin-right: 45px;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -41,11 +47,19 @@
     margin-right: 5px;
 
     &--open {
-      color: $heliotrope;
+      fill: $heliotrope;
+
+      svg {
+        width: 9px;
+      }
     }
 
     &--close {
-      color: $royal-blue;
+      fill: $royal-blue;
+
+      svg {
+        width: 9px;
+      }
     }
   }
 }

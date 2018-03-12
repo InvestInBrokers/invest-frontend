@@ -41,6 +41,6 @@ Tiles.propTypes = {
 
 Tiles.defaultProps = {
     bottomText: '',
-}
+};
 
 export default Tiles;
