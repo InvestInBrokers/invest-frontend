@@ -7,9 +7,13 @@ class Statistics extends Component {
     componentDidMount() {
         const ctx = document.getElementById('myChart').getContext('2d');
 
-        const gradientFill = ctx.createLinearGradient(500, 0, 100, 0);
-        gradientFill.addColorStop(0, 'rgba(128, 182, 244, 0.6)');
-        gradientFill.addColorStop(1, 'rgba(244, 144, 128, 0.6)');
+        const gradientFillBlue = ctx.createLinearGradient(0, 0, 0, 150);
+        gradientFillBlue.addColorStop(0, 'rgba(52, 84, 245, 0.45)');
+        gradientFillBlue.addColorStop(1, 'rgba(250, 251, 255, 0.45)');
+
+        const gradientFillPurple = ctx.createLinearGradient(0, 0, 0, 150);
+        gradientFillPurple.addColorStop(0, 'rgba(168, 83, 247, 0.45)');
+        gradientFillPurple.addColorStop(1, 'rgba(250, 251, 255, 0.45)');
 
         new Chart(ctx, {
             type: 'line',
@@ -17,22 +21,22 @@ class Statistics extends Component {
                 labels: ['Feb 1-7', 'Feb 7-14', 'Feb 14-21', 'Feb 21-28'],
                 datasets: [{
                     data: [17, 28, 34, 19],
-                    backgroundColor: 'rgba(0,0,0,0)',
-                    // backgroundColor: gradientFill,
-                    borderColor: 'red',
-                    borderWidth: 5,
+                    backgroundColor: gradientFillBlue,
+                    borderColor: '#3454f5',
+                    borderWidth: 2,
                     fill: true,
                 }, {
                     data: [30, 22, 17, 34],
-                    backgroundColor: 'rgba(0,0,0,0)',
-                    borderColor: 'blue',
-                    borderWidth: 5,
+                    backgroundColor: gradientFillPurple,
+                    borderColor: '#a957f5',
+                    borderWidth: 2,
                     fill: true,
                 }],
             },
             options: {
-                responsive: true,
                 maintainAspectRatio: false,
+                responsive: true,
+                scaleShowVerticalLines: false,
                 legend: {
                     display: false,
                 },
@@ -45,6 +49,10 @@ class Statistics extends Component {
                     point: {
                         radius: 0,
                     },
+                    line: {
+                        backgroundColor: 'white',
+                        borderWidth: 3,
+                    },
                 },
                 scales: {
                     yAxes: [{
@@ -54,13 +62,15 @@ class Statistics extends Component {
                             max: 60,
                             stepSize: 20,
                             beginAtZero: true,
-                            fontColor: 'blue',
-                            fontStyle: 'bold',
+                            fontColor: '#aeabc0',
+                            fontSize: 12,
+                            fontFamily: 'RubikRegular',
                             maxTicksLimit: 5,
-                            padding: 20,
+                            padding: 14,
                         },
                         gridLines: {
                             drawBorder: false,
+                            zeroLineColor: '#eae9f7',
                             tickMarkLength: 0,
                         },
                     }],
@@ -69,14 +79,14 @@ class Statistics extends Component {
                             drawTicks: false,
                             display: false,
                             zeroLineWidth: 0,
-                            zeroLineColor: 'blue',
                             tickMarkLength: 0,
                         },
                         ticks: {
-                            padding: 20,
+                            padding: 22,
                             beginAtZero: true,
-                            fontColor: 'red',
-                            fontStyle: 'bold',
+                            fontColor: '#aeabc0',
+                            fontSize: 12,
+                            fontFamily: 'RubikRegular',
                         },
                     }],
                 },

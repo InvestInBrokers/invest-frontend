@@ -6,6 +6,7 @@ import TilesHeader from '../Tiles/TilesHeader';
 import TilesMoreActions from '../Tiles/TilesMoreActions';
 import TilesStatistics from '../Tiles/TilesStatistics';
 import Table from '../Table';
+import Statistics from '../Statistics';
 import CircleStatistic from '../CircleStatistic';
 import CircleIcon from '../icons/Circle';
 
@@ -23,9 +24,7 @@ const Dashboard = () => (
                 }
                 size={Tiles.size.TWO_X}
             >
-                <div>
-                    Statistics
-                </div>
+                <Statistics />
             </Tiles>
             <Tiles
                 HeaderComponent={<TilesHeader title="Your trades" actionComponent={<TilesMoreActions />} />}
