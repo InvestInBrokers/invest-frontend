@@ -1,6 +1,8 @@
+/* eslint-disable max-len */
 import React from 'react';
 import CircleImage from '../src/main/components/CircleImage';
 import Badge from '../src/main/components/Badge';
+import Translate from '../src/main/components/Translate';
 
 import Avatar1 from '../src/main/assets/images/avatar2.jpg';
 import Avatar2 from '../src/main/assets/images/avatar3.jpg';
@@ -11,7 +13,10 @@ import Eth from '../src/main/assets/images/eth.jpg';
 
 export const successfulTradersTable = {
     name: 'successful-traders-table',
-    head: [{ title: '' }, { title: 'Followers' }, { title: 'Last 30 days' }],
+    head: [
+        { title: '' },
+        { title: (<Translate value="tables.successful_traders.head.followers" />) },
+        { title: (<Translate value="tables.successful_traders.head.last_30_days" />) }],
     bodyClass: '',
     headClass: '',
     body: [
@@ -242,3 +247,4 @@ export const yourtradesTable = {
         },
     ],
 };
+/* eslint-enabled max-len */

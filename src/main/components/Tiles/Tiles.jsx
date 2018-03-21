@@ -9,7 +9,9 @@ const tilesSize = {
     TWO_X: 'tiles--2x',
 };
 
-const Tiles = ({ HeaderComponent, size, children, bottomText }) => {
+const Tiles = ({
+    HeaderComponent, size, children, bottomText,
+}) => {
     const className = classNames(
         'tiles',
         size,
@@ -36,7 +38,10 @@ Tiles.propTypes = {
     HeaderComponent: PropTypes.node.isRequired,
     children: PropTypes.node.isRequired,
     size: PropTypes.string.isRequired,
-    bottomText: PropTypes.string,
+    bottomText: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.object,
+    ]),
 };
 
 Tiles.defaultProps = {

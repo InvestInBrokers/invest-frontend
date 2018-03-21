@@ -22,7 +22,10 @@ const TilesHeader = ({ title, actionComponent }) => {
 TilesHeader.size = tilesSize;
 
 TilesHeader.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.object,
+    ]).isRequired,
     actionComponent: PropTypes.node,
 };
 

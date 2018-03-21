@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Translate from '../Translate';
 import DashboardHeader from './DashboardHeader';
 import Tiles from '../Tiles';
 import TilesHeader from '../Tiles/TilesHeader';
@@ -21,32 +22,42 @@ const Dashboard = () => (
         <div className="dashboard__content">
             <Tiles
                 HeaderComponent={
-                    <TilesHeader title="Statistics" actionComponent={<TilesStatistics />} />
+                    <TilesHeader
+                        title={<Translate value="common.statistics" />}
+                        actionComponent={<TilesStatistics />}
+                    />
                 }
                 size={Tiles.size.TWO_X}
             >
                 <Statistics />
             </Tiles>
             <Tiles
-                HeaderComponent={<TilesHeader title="Your trades" actionComponent={<TilesMoreActions />} />}
+                HeaderComponent={
+                    <TilesHeader
+                        title={<Translate value="common.your_trades" />}
+                        actionComponent={<TilesMoreActions />}
+                    />
+                }
                 size={Tiles.size.TWO_X}
-                bottomText="View more"
+                bottomText={<Translate value="common.view_more" />}
             >
                 <div>
                     <div className="trades-nav">
                         <ul className="trades-nav__ul">
-                            <li className="trades-nav__li trades-nav__li--active">All</li>
+                            <li className="trades-nav__li trades-nav__li--active">
+                                <Translate value="common.all" />
+                            </li>
                             <li className="trades-nav__li">
                                 <span className="trades-nav__circle trades-nav__circle--open">
                                     <CircleIcon />
                                 </span>
-                                <span>Open</span>
+                                <Translate value="common.open" />
                             </li>
                             <li className="trades-nav__li">
                                 <span className="trades-nav__circle trades-nav__circle--close">
                                     <CircleIcon />
                                 </span>
-                                <span>Close</span>
+                                <Translate value="common.close" />
                             </li>
                         </ul>
                     </div>
@@ -60,9 +71,9 @@ const Dashboard = () => (
                 </div>
             </Tiles>
             <Tiles
-                HeaderComponent={<TilesHeader title="Successful traders" />}
+                HeaderComponent={<TilesHeader title={<Translate value="common.successful_traders" />} />}
                 size={Tiles.size.TWO_X}
-                bottomText="View more"
+                bottomText={<Translate value="common.view_more" />}
             >
                 <Table
                     name={successfulTradersTable.name}
@@ -73,9 +84,14 @@ const Dashboard = () => (
                 />
             </Tiles>
             <Tiles
-                HeaderComponent={<TilesHeader title="Deposit" actionComponent={<TilesMoreActions />} />}
+                HeaderComponent={
+                    <TilesHeader
+                        title={<Translate value="common.deposit" />}
+                        actionComponent={<TilesMoreActions />}
+                    />
+                }
                 size={Tiles.size.ONE_X}
-                bottomText="View more"
+                bottomText={<Translate value="common.view_more" />}
             >
                 <Table
                     name={depositTable.name}
@@ -86,9 +102,14 @@ const Dashboard = () => (
                 />
             </Tiles>
             <Tiles
-                HeaderComponent={<TilesHeader title="Profit this month" actionComponent={<TilesMoreActions />} />}
+                HeaderComponent={
+                    <TilesHeader
+                        title={<Translate value="common.profit_this_month" />}
+                        actionComponent={<TilesMoreActions />}
+                    />
+                }
                 size={Tiles.size.ONE_X}
-                bottomText="View statistics"
+                bottomText={<Translate value="common.view_statistics" />}
             >
                 <CircleStatistic percent="+4.7%" />
             </Tiles>

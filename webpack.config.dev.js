@@ -20,6 +20,7 @@ module.exports = {
         filename: 'app.js', // cannot be [chunkhash] when using HMR
         // cannot use [hash] because webpack-dev-middleware does not report re-bundling
         // chunkFilename: '[name].js',
+        publicPath: '/',
     },
     plugins: [
         new webpack.DefinePlugin({
@@ -33,6 +34,9 @@ module.exports = {
         new webpack.NamedModulesPlugin(), // instead of HashedModuleIdsPlugin in dist
         new ExtractTextPlugin('[name].css'),
     ],
+    devServer: {
+        historyApiFallback: true,
+    },
     module: {
         rules: [{
             test: /\.jsx?$/,

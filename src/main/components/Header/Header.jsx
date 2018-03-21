@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Translate from '../Translate';
 import Badge from '../Badge';
@@ -23,11 +24,25 @@ const Header = () => (
                 </div>
                 <div className="header__menu">
                     <ul className="header__menu-list">
-                        <li className="header__menu-item header__menu-item--active">Dashboard</li>
-                        <li className="header__menu-item">Markets</li>
-                        <li className="header__menu-item">Traders</li>
+                        <li className="header__menu-item header__menu-item--active">
+                            <Link to="/">
+                                <Translate value="header.menu.dashboard" />
+                            </Link>
+                        </li>
                         <li className="header__menu-item">
-                            <Translate value="test.test" />
+                            <Link to="/markets">
+                                <Translate value="header.menu.markets" />
+                            </Link>
+                        </li>
+                        <li className="header__menu-item">
+                            <Link to="/traders">
+                                <Translate value="header.menu.traders" />
+                            </Link>
+                        </li>
+                        <li className="header__menu-item">
+                            <Link to="/support">
+                                <Translate value="header.menu.support" />
+                            </Link>
                         </li>
                     </ul>
                 </div>
