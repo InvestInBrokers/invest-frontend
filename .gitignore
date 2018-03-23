@@ -1,13 +1,23 @@
-/node_modules
-/test/js
-/test/browsertest/js
-/test/fixtures/temp-cache-fixture
-/benchmark/js
-/benchmark/fixtures
-/examples/**/js
-/coverage
+### user ###
 .DS_Store
-*.log
-.idea
 .vscode
+.idea
+
+### test ###
+/bin
+/screenshots
+
+### base ###
+# release folder
+/dist
+/browser
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules
+coverage
 .nyc_output

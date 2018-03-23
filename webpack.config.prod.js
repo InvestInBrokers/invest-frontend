@@ -2,8 +2,7 @@ const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
-const { join, resolve } = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { resolve } = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
@@ -11,6 +10,7 @@ module.exports = {
     devtool: 'source-map',
     entry: {
         app: [
+            './vendor/babel-polyfill.min',
             './src/main/index',
         ],
     },
@@ -50,18 +50,15 @@ module.exports = {
             },
         }),
         new webpack.optimize.ModuleConcatenationPlugin(),
-        new HtmlWebpackPlugin({
-            template: './src/main/index.html',
-        }),
         new ExtractTextPlugin('[name].css'),
         new CopyWebpackPlugin([{
-            from: join(__dirname, 'src/main/index.html'),
-            to: join(__dirname, 'dist', 'www', 'index.html'),
+            from: resolve(__dirname, 'index.html'),
+            to: resolve(__dirname, 'dist', 'www', 'index.html'),
         }]),
     ],
     module: {
         rules: [{
-            test: /\.js$/,
+            test: /\.jsx?$/,
             loader: 'babel-loader',
             include: resolve(__dirname),
             exclude: /node_modules/,
@@ -116,7 +113,7 @@ module.exports = {
         }],
     },
     resolve: {
-        extensions: ['.js', '.css', '.scss', '.json'],
+        extensions: ['.js', '.jsx', '.css', '.scss', '.json'],
     },
     devServer: {
         disableHostCheck: true,

@@ -26,7 +26,7 @@ export const successfulTradersTable = {
                             <span className="table__circle-img">
                                 <CircleImage avatarImg={Avatar1} size={CircleImage.size.SMALL} />
                             </span>
-                            <span className="table__fullname">Nicolas May</span>
+                            <span className="table__fullname">Emma May</span>
                             <Badge text="Lvl 1" color={Badge.color.GREEN} />
                         </div>
                     ),
@@ -78,7 +78,7 @@ export const successfulTradersTable = {
                             <span className="table__circle-img">
                                 <CircleImage avatarImg={Avatar3} size={CircleImage.size.SMALL} />
                             </span>
-                            <span className="table__fullname">Anthony Mayers</span>
+                            <span className="table__fullname">Alice Mayers</span>
                             <Badge text="Lvl 3" color={Badge.color.BLUE} />
                         </div>
                     ),
