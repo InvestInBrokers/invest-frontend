@@ -32,6 +32,7 @@
   }
 
   &__menu-item {
+    color: $spun-pearl;
     font-size: 15px;
     margin: 0 16px;
 
@@ -50,16 +51,14 @@
       margin-right: 0;
     }
 
-    &--active {
+    &--active a {
       color: $mulled-wine;
 
       @include font-weight-medium;
     }
 
     a {
-      color: $spun-pearl;
       text-decoration: none;
-      text-underline: none;
     }
   }
 

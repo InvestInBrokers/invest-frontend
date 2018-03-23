@@ -30,13 +30,13 @@ const Header = ({ onSetModalStatus }) => (
                                 <Translate value="header.menu.dashboard" />
                             </Link>
                         </li>
-                        <li className="header__menu-item">
+                        <li className="header__menu-item" onClick={() => { onSetModalStatus(true); }}>
                             <Translate value="header.menu.markets" />
                         </li>
-                        <li className="header__menu-item">
+                        <li className="header__menu-item" onClick={() => { onSetModalStatus(true); }}>
                             <Translate value="header.menu.traders" />
                         </li>
-                        <li className="header__menu-item">
+                        <li className="header__menu-item" onClick={() => { onSetModalStatus(true); }}>
                             <Translate value="header.menu.support" />
                         </li>
                     </ul>
