@@ -1,0 +1,19 @@
+@import '../../styles/colors';
+
+.popup {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+  &__content {
+    align-items: center;
+    background: rgba($navy, 0.3) repeating-linear-gradient(-55deg, rgba($navy, 0.05), rgba($navy, 0.05), transparent 6px, transparent 12px);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+  }
+}

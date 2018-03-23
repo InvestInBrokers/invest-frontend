@@ -1,1 +1,1 @@
-export default from './Tiles';
+export default from './TilesContainer';

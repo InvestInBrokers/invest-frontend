@@ -2,4 +2,8 @@
 
 .tiles-more-actions {
   fill: $mulled-wine;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

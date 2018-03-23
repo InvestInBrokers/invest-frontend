@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import Translate from '../Translate';
@@ -15,7 +16,7 @@ import InvestLogo from '../../assets/images/invest-logo.png';
 
 import './header.scss';
 
-const Header = () => (
+const Header = ({ onSetModalStatus }) => (
     <div className="header">
         <div className="header__container">
             <div className="header__logo-menu">
@@ -49,22 +50,31 @@ const Header = () => (
             </div>
             <div className="header__navigation">
                 <div className="header__actions">
-                    <div className="header__action header__action--messages">
+                    <div
+                        onClick={() => { onSetModalStatus(true); }}
+                        className="header__action header__action--messages"
+                    >
                         <EnvelopeIcon />
                     </div>
-                    <div className="header__action header__action--settings">
+                    <div
+                        onClick={() => { onSetModalStatus(true); }}
+                        className="header__action header__action--settings"
+                    >
                         <CogeIcon />
                     </div>
-                    <div className="header__action header__action--alerts">
+                    <div
+                        onClick={() => { onSetModalStatus(true); }}
+                        className="header__action header__action--alerts"
+                    >
                         <BellIcon />
                         <span className="header__alerts-count">2</span>
                     </div>
                 </div>
                 <div className="header__avatar">
-                    <span className="header__avatar-img">
+                    <span onClick={() => { onSetModalStatus(true); }} className="header__avatar-img">
                         <CircleImage avatarImg={AvatarImage} size={CircleImage.size.BIG} />
                     </span>
-                    <span className="header__user-level">
+                    <span onClick={() => { onSetModalStatus(true); }} className="header__user-level">
                         <Badge text="Lvl 1" color={Badge.color.GREEN} />
                     </span>
                 </div>
@@ -80,5 +90,9 @@ const Header = () => (
         </div>
     </div>
 );
+
+Header.propTypes = {
+    onSetModalStatus: PropTypes.func.isRequired,
+};
 
 export default Header;

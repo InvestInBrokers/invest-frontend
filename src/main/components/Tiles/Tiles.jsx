@@ -10,7 +10,7 @@ const tilesSize = {
 };
 
 const Tiles = ({
-    HeaderComponent, size, children, bottomText,
+    HeaderComponent, size, children, bottomText, onSetModalStatus,
 }) => {
     const className = classNames(
         'tiles',
@@ -24,7 +24,10 @@ const Tiles = ({
                 {children}
             </div>
             {bottomText && (
-                <div className="tiles__more">
+                <div
+                    onClick={() => { onSetModalStatus(true); }}
+                    className="tiles__more"
+                >
                     {bottomText}
                 </div>
             )}
@@ -42,6 +45,7 @@ Tiles.propTypes = {
         PropTypes.string,
         PropTypes.object,
     ]),
+    onSetModalStatus: PropTypes.func.isRequired,
 };
 
 Tiles.defaultProps = {

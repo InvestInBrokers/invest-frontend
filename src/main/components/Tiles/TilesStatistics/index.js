@@ -1,1 +1,1 @@
-export default from './TilesStatistics';
+export default from './TilesStatisticsContainer';

@@ -1,1 +1,1 @@
-export default from './TilesMoreActions';
+export default from './TilesMoreActionsContainer';
