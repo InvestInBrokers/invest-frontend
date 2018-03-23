@@ -11,7 +11,7 @@ import BellIcon from '../icons/Bell';
 
 import AvatarImage from '../../assets/images/claire-ridley-vinopolis.jpg';
 
-import Logo from '../icons/Logo';
+import InvestLogo from '../../assets/images/invest-logo.png';
 
 import './header.scss';
 
@@ -20,7 +20,7 @@ const Header = () => (
         <div className="header__container">
             <div className="header__logo-menu">
                 <div className="header__logo">
-                    <Logo />
+                    <img src={InvestLogo} alt="Invest logo" />
                 </div>
                 <div className="header__menu">
                     <ul className="header__menu-list">
