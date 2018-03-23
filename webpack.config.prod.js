@@ -5,6 +5,8 @@ const autoprefixer = require('autoprefixer');
 const { resolve } = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     devtool: 'source-map',
@@ -19,6 +21,9 @@ module.exports = {
         filename: '[name].js',
     },
     plugins: [
+        new HtmlWebpackPlugin({
+            template: 'index.html',
+        }),
         new webpack.DefinePlugin({
             'window.DEV_TOOLS_ENABLED': JSON.stringify(true),
             'process.env': {
@@ -55,6 +60,7 @@ module.exports = {
             from: resolve(__dirname, 'index.html'),
             to: resolve(__dirname, 'dist', 'www', 'index.html'),
         }]),
+        new FaviconsWebpackPlugin('invest-logotyp.png'),
     ],
     module: {
         rules: [{

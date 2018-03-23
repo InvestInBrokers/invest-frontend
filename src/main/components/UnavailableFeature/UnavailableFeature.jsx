@@ -14,7 +14,7 @@ const UnavailableFeature = ({ onSetModalStatus }) => (
             >
                 <span>X</span>
             </div>
-            <span>Ta funkcja jest niedostępna</span>
+            <span>This option is not yet available. We will make it available soon.</span>
         </div>
     </Popup>
 );

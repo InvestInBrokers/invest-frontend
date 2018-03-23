@@ -3,6 +3,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const { resolve } = require('path');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     devtool: 'source-map',
@@ -23,6 +25,9 @@ module.exports = {
         publicPath: '/',
     },
     plugins: [
+        new HtmlWebpackPlugin({
+            template: 'index.html',
+        }),
         new webpack.DefinePlugin({
             'window.DEV_TOOLS_ENABLED': JSON.stringify(true),
             'process.env': {
@@ -33,6 +38,7 @@ module.exports = {
         new webpack.NoEmitOnErrorsPlugin(),
         new webpack.NamedModulesPlugin(), // instead of HashedModuleIdsPlugin in dist
         new ExtractTextPlugin('[name].css'),
+        new FaviconsWebpackPlugin('./invest-logotyp.png'),
     ],
     devServer: {
         historyApiFallback: true,

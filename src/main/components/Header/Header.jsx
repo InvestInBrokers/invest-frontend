@@ -31,19 +31,13 @@ const Header = ({ onSetModalStatus }) => (
                             </Link>
                         </li>
                         <li className="header__menu-item">
-                            <Link to="/markets">
-                                <Translate value="header.menu.markets" />
-                            </Link>
+                            <Translate value="header.menu.markets" />
                         </li>
                         <li className="header__menu-item">
-                            <Link to="/traders">
-                                <Translate value="header.menu.traders" />
-                            </Link>
+                            <Translate value="header.menu.traders" />
                         </li>
                         <li className="header__menu-item">
-                            <Link to="/support">
-                                <Translate value="header.menu.support" />
-                            </Link>
+                            <Translate value="header.menu.support" />
                         </li>
                     </ul>
                 </div>
