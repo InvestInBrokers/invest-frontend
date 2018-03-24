@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
 import { setModalStatus } from '../../modules/app/actions';
 import PlainHeader from './Header';
@@ -9,5 +10,5 @@ const mapDispatchToProps = dispatch => ({
     },
 });
 
-const Header = connect(null, mapDispatchToProps)(PlainHeader);
+const Header = withRouter(connect(null, mapDispatchToProps)(PlainHeader));
 export default Header;

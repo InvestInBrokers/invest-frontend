@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import createSagaMiddleware from 'redux-saga';
 import { createStore, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import reducer from './modules/reducer';
 import saga from './saga';
@@ -32,7 +33,9 @@ class Main extends Component {
     render() {
         return (
             <Provider store={this.store}>
-                <App />
+                <Router>
+                    <App />
+                </Router>
             </Provider>
         );
     }

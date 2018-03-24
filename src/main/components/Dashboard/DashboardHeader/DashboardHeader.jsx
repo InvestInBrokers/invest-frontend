@@ -11,7 +11,6 @@ const DashboardHeader = () => (
         </div>
         <div className="dashboard-header__followers">
             <div className="dashboard-header__followers-number">
-                {/*<img className="dashboard-header__followers-logotyp" src={logotyp} alt="logotyp" />*/}
                 <span className="dashboard-header__followers-logotyp">
                     <LogoTyp />
                 </span>

@@ -29,12 +29,24 @@
 
   &__menu-list {
     display: flex;
+
+    li {
+      margin: 0 16px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
   &__menu-item {
     color: $spun-pearl;
     font-size: 15px;
-    margin: 0 16px;
+    text-decoration: none;
 
     @include font-weight-regular;
 
@@ -43,22 +55,10 @@
       cursor: pointer;
     }
 
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
-
-    &--active a {
+    &--active {
       color: $mulled-wine;
 
       @include font-weight-medium;
-    }
-
-    a {
-      text-decoration: none;
     }
   }
 
