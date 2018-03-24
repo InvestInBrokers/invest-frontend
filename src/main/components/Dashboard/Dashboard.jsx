@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Translate from '../Translate';
-import DashboardHeader from './DashboardHeader';
+import PageTitle from '../PageTitle';
 import Tiles from '../Tiles';
 import TilesHeader from '../Tiles/TilesHeader';
 import TilesMoreActions from '../Tiles/TilesMoreActions';
@@ -11,6 +11,7 @@ import Table from '../Table';
 import Statistics from '../Statistics';
 import CircleStatistic from '../CircleStatistic';
 import CircleIcon from '../icons/Circle';
+import LogoTyp from '../icons/LogoTyp';
 
 import './dashboard.scss';
 
@@ -18,7 +19,19 @@ import { successfulTradersTable, depositTable, yourtradesTable } from '../../../
 
 const Dashboard = () => (
     <div className="dashboard">
-        <DashboardHeader />
+        <PageTitle title={<Translate value="header.menu.dashboard" />}>
+            <div className="dashboard__followers">
+                <div className="dashboard__followers-number">
+                    <span className="dashboard__followers-logotyp">
+                        <LogoTyp />
+                    </span>
+                    <span>242</span>
+                </div>
+                <div className="dashboard__followers-text">
+                    <span>Followers</span>
+                </div>
+            </div>
+        </PageTitle>
         <div className="dashboard__content">
             <Tiles
                 HeaderComponent={

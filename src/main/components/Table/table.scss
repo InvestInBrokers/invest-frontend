@@ -8,6 +8,7 @@
 
   &__head {
     color: $spun-pearl;
+    fill: $spun-pearl;
     font-size: 12px;
     text-align: right;
 
@@ -20,12 +21,47 @@
         padding: 9px 0;
       }
     }
+
+    &--text-left {
+      text-align: left;
+    }
+
+    &--padding-bottom-35 {
+      th {
+        padding-bottom: 35px;
+      }
+    }
+
+    &--markets-table {
+      border-bottom: 1px solid $white-lilac;
+      font-size: 15px;
+
+      th {
+        &:first-child {
+          padding-left: 40px;
+        }
+      }
+    }
   }
 
   &__body {
     color: $spun-pearl;
     font-size: 15px;
     text-align: right;
+
+    &--text-left {
+      text-align: left;
+    }
+
+    &--markets-table {
+      background: linear-gradient(to bottom, #f9f9fd 0%, $white 25px);
+
+      td {
+        &:first-child {
+          padding-left: 40px;
+        }
+      }
+    }
   }
 
   &__tr {
@@ -40,8 +76,12 @@
     padding: 5px 0;
     vertical-align: middle;
 
-    &--big-padding {
+    &--padding-16-0 {
       padding: 16px 0;
+    }
+
+    &--padding-22-0 {
+      padding: 22px 0;
     }
 
     &--mulled-wine {
@@ -58,6 +98,20 @@
 
     &--green {
       color: $forest-green;
+    }
+
+    &--blue {
+      color: $cornflower-blue;
+    }
+
+    &--forest-green {
+      color: $forest-green;
+      fill: $forest-green;
+    }
+
+    &--coral-red {
+      color: $coral-red;
+      fill: $coral-red;
     }
 
     &--width-15 {

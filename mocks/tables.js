@@ -11,6 +11,10 @@ import Btc from '../src/main/assets/images/BTC.png';
 import Usdt from '../src/main/assets/images/usdt.png';
 import Eth from '../src/main/assets/images/eth.jpg';
 
+import AngleDown from '../src/main/components/icons/AngleDown';
+import ArrowDown from '../src/main/components/icons/ArrowDown';
+import ArrowUp from '../src/main/components/icons/ArrowUp';
+
 export const successfulTradersTable = {
     name: 'successful-traders-table',
     head: [
@@ -184,7 +188,7 @@ export const yourtradesTable = {
             trClass: '',
             columns: [
                 {
-                    tdClass: 'table__td--big-padding table__td--mulled-wine table__td--text-left table__td--width-15 table__td--font-size-12',
+                    tdClass: 'table__td--padding-16-0 table__td--mulled-wine table__td--text-left table__td--width-15 table__td--font-size-12',
                     body: (<span className="BTC">BTC/USDT</span>),
                 },
                 {
@@ -206,7 +210,7 @@ export const yourtradesTable = {
             trClass: '',
             columns: [
                 {
-                    tdClass: 'table__td--big-padding table__td--mulled-wine table__td--text-left table__td--width-15 table__td--font-size-12',
+                    tdClass: 'table__td--padding-16-0 table__td--mulled-wine table__td--text-left table__td--width-15 table__td--font-size-12',
                     body: (<span className="BTC">BTC/ETH</span>),
                 },
                 {
@@ -228,7 +232,7 @@ export const yourtradesTable = {
             trClass: '',
             columns: [
                 {
-                    tdClass: 'table__td--big-padding table__td--mulled-wine table__td--text-left table__td--width-15 table__td--font-size-12',
+                    tdClass: 'table__td--padding-16-0 table__td--mulled-wine table__td--text-left table__td--width-15 table__td--font-size-12',
                     body: (<span className="BTC">BTC/DASH</span>),
                 },
                 {
@@ -247,4 +251,295 @@ export const yourtradesTable = {
         },
     ],
 };
+
+export const marketsTable = {
+    name: 'markets-table',
+    head: [
+        { title: 'Market' },
+        { title: 'Currency' },
+        { title: (<span>Volume <AngleDown /></span>) },
+        { title: '% Change' },
+        { title: 'Last price' },
+        { title: '24HR High' },
+        { title: '24HR Low' },
+    ],
+    bodyClass: 'table__body--text-left table__body--markets-table',
+    headClass: 'table__head--text-left table__head--padding-bottom-35 table__head--markets-table',
+    body: [
+        {
+            id: 1,
+            trClass: '',
+            columns: [
+                {
+                    tdClass: 'table__td--padding-22-0 table__td--blue',
+                    body: (<span className="BTC">BTC-USDT</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>Ethereum</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>4285.161</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>4.2 <ArrowUp /></span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.11236836</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.11419409</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.10676725</span>),
+                },
+            ],
+        },
+        {
+            id: 2,
+            trClass: '',
+            columns: [
+                {
+                    tdClass: 'table__td--padding-22-0 table__td--blue',
+                    body: (<span className="BTC">BTC-IGNIS</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>Ignis</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>2583.749</span>),
+                },
+                {
+                    tdClass: 'table__td--coral-red',
+                    body: (<span>-18.2 <ArrowDown /></span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.0004047</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.1142669</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.10000424</span>),
+                },
+            ],
+        },
+        {
+            id: 3,
+            trClass: '',
+            columns: [
+                {
+                    tdClass: 'table__td--padding-22-0 table__td--blue',
+                    body: (<span className="BTC">BTC-ADA</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>Ada</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>1943.146</span>),
+                },
+                {
+                    tdClass: 'table__td--coral-red',
+                    body: (<span>-1.1 <ArrowDown /></span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.0004865</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.11411594</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.106767128</span>),
+                },
+            ],
+        },
+        {
+            id: 4,
+            trClass: '',
+            columns: [
+                {
+                    tdClass: 'table__td--padding-22-0 table__td--blue',
+                    body: (<span className="BTC">BTC-LSK</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>Lisk</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>1741.356</span>),
+                },
+                {
+                    tdClass: 'table__td--coral-red',
+                    body: (<span>-10.2 <ArrowDown /></span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.0005063</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.0003246</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.10676733</span>),
+                },
+            ],
+        },
+        {
+            id: 5,
+            trClass: '',
+            columns: [
+                {
+                    tdClass: 'table__td--padding-22-0 table__td--blue',
+                    body: (<span className="BTC">BTC-XLM</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>Lumen</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>1537.797</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>0.3 <ArrowUp /></span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.0003236</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.11154155</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.00676727</span>),
+                },
+            ],
+        },
+        {
+            id: 6,
+            trClass: '',
+            columns: [
+                {
+                    tdClass: 'table__td--padding-22-0 table__td--blue',
+                    body: (<span className="BTC">BTC-XRP</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>Ripple</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>1192.681</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>1.5 <ArrowUp /></span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.11236237</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.1446272</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.10674245</span>),
+                },
+            ],
+        },
+        {
+            id: 7,
+            trClass: '',
+            columns: [
+                {
+                    tdClass: 'table__td--padding-22-0 table__td--blue',
+                    body: (<span className="BTC">BTC-STEEM</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>Steem</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>1076.243</span>),
+                },
+                {
+                    tdClass: 'table__td--coral-red',
+                    body: (<span>-4.2 <ArrowDown /></span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.0000627</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.1000309</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.10222525</span>),
+                },
+            ],
+        },
+        {
+            id: 8,
+            trClass: '',
+            columns: [
+                {
+                    tdClass: 'table__td--padding-22-0 table__td--blue',
+                    body: (<span className="BTC">BTC-XVG</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>Verge</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>1034</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>0.1 <ArrowUp /></span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.1123996</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.11483409</span>),
+                },
+                {
+                    tdClass: 'table__td--mulled-wine',
+                    body: (<span>0.10553257</span>),
+                },
+            ],
+        },
+    ],
+};
+
+
 /* eslint-enabled max-len */

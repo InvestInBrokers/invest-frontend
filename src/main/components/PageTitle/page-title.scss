@@ -1,0 +1,16 @@
+@import '../../styles/colors';
+@import '../../styles/font-weights';
+
+.page-title {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    color: $mulled-wine;
+    font-size: 25px;
+
+    @include font-weight-regular;
+  }
+}
+

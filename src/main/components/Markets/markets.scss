@@ -1,0 +1,57 @@
+@import '../../styles/colors';
+@import '../../styles/font-weights';
+
+.markets {
+  &__content {
+    background: $white;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 45px;
+    padding: 35px 0;
+  }
+
+  &__pagination {
+    background: linear-gradient(to bottom, #f9f9fd 0%, $white 15px);
+    border-top: 1px solid $white-lilac;
+    padding: 35px 35px 0;
+    width: 100%;
+  }
+}
+
+.pagination {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    align-items: center;
+    border: 1px solid $athens-gray;
+    border-radius: 4px;
+    color: $mulled-wine;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    margin: 0 3.5px;
+    padding: 9px 14.5px;
+
+    @include font-weight-regular;
+
+    &:hover {
+      border-color: $cornflower-blue;
+      color: $cornflower-blue;
+      cursor: pointer;
+    }
+
+    &--active {
+      border-color: $cornflower-blue;
+      color: $cornflower-blue;
+    }
+
+    &--dots {
+      border: 0 solid $athens-gray;
+      padding: 9px 5px;
+    }
+  }
+}

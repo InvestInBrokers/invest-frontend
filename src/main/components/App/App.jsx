@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 
 import Header from '../Header';
 import Dashboard from '../Dashboard';
+import Markets from '../Markets';
 import UnavailableFeature from '../UnavailableFeature';
 
 import './app.scss';
@@ -20,7 +21,7 @@ class App extends Component {
                 </div>
                 <div className="app__content">
                     <Route exact path="/" component={Dashboard} />
-                    <Route path="/markets" component={DemoComponent} />
+                    <Route path="/markets" component={Markets} />
                     <Route path="/traders" component={DemoComponent} />
                     <Route path="/support" component={DemoComponent} />
                 </div>
