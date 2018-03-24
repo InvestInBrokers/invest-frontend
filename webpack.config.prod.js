@@ -60,8 +60,11 @@ module.exports = {
             from: resolve(__dirname, 'index.html'),
             to: resolve(__dirname, 'dist', 'www', 'index.html'),
         }]),
-        new FaviconsWebpackPlugin('invest-logotyp.png'),
+        new FaviconsWebpackPlugin('./invest-logotyp.png'),
     ],
+    devServer: {
+        historyApiFallback: true,
+    },
     module: {
         rules: [{
             test: /\.jsx?$/,
