@@ -15,6 +15,8 @@ const badgeColor = {
     GREY: 'badge--grey',
     BLUE: 'badge--blue',
     GREEN_BLUE: 'badge--green-blue',
+    ROYAL_BLUE: 'badge--royal-blue',
+    LOGAN: 'badge--logan',
 };
 
 const Badge = ({ text, size, color }) => {

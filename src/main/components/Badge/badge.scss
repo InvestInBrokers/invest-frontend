@@ -41,4 +41,14 @@
     background: linear-gradient(0, rgb(22, 211, 173) 0%, rgb(93, 222, 211) 99%);
     box-shadow: 0 2px 6.65px 0.35px rgba(35, 210, 183, 0.3);
   }
+
+  &--royal-blue {
+    background: linear-gradient(0, rgb(89, 78, 236) 0%, rgb(121, 112, 244) 100%);
+    box-shadow: 0 0 1.9px 0.1px rgba(120, 110, 244, 0.3);
+  }
+
+  &--logan {
+    background: linear-gradient(0, rgb(158, 156, 191) 0%, rgb(189, 187, 218) 100%);
+    box-shadow: 0 0 1.9px 0.1px rgba(158, 156, 191, 0.3);
+  }
 }

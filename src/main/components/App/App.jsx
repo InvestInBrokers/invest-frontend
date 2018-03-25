@@ -5,6 +5,7 @@ import { Route } from 'react-router-dom';
 import Header from '../Header';
 import Dashboard from '../Dashboard';
 import Markets from '../Markets';
+import Traders from '../Traders';
 import UnavailableFeature from '../UnavailableFeature';
 
 import './app.scss';
@@ -22,7 +23,7 @@ class App extends Component {
                 <div className="app__content">
                     <Route exact path="/" component={Dashboard} />
                     <Route path="/markets" component={Markets} />
-                    <Route path="/traders" component={DemoComponent} />
+                    <Route path="/traders" component={Traders} />
                     <Route path="/support" component={DemoComponent} />
                 </div>
                 {splashScreenOpened && (

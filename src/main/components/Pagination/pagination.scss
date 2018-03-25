@@ -1,0 +1,38 @@
+@import '../../styles/colors';
+@import '../../styles/font-weights';
+
+.pagination {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    align-items: center;
+    border: 1px solid $athens-gray;
+    border-radius: 4px;
+    color: $mulled-wine;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    margin: 0 3.5px;
+    padding: 9px 14.5px;
+
+    @include font-weight-regular;
+
+    &:hover {
+      border-color: $cornflower-blue;
+      color: $cornflower-blue;
+      cursor: pointer;
+    }
+
+    &--active {
+      border-color: $cornflower-blue;
+      color: $cornflower-blue;
+    }
+
+    &--dots {
+      border: 0 solid $athens-gray;
+      padding: 9px 5px;
+    }
+  }
+}

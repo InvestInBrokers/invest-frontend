@@ -7,6 +7,9 @@ import Translate from '../src/main/components/Translate';
 import Avatar1 from '../src/main/assets/images/avatar2.jpg';
 import Avatar2 from '../src/main/assets/images/avatar3.jpg';
 import Avatar3 from '../src/main/assets/images/avatar_demo_mo.jpg';
+import Avatar4 from '../src/main/assets/images/claire-ridley-vinopolis.jpg';
+import Avatar5 from '../src/main/assets/images/avatar4.jpg';
+import Avatar6 from '../src/main/assets/images/avatar5.jpg';
 import Btc from '../src/main/assets/images/BTC.png';
 import Usdt from '../src/main/assets/images/usdt.png';
 import Eth from '../src/main/assets/images/eth.jpg';
@@ -535,6 +538,300 @@ export const marketsTable = {
                 {
                     tdClass: 'table__td--mulled-wine',
                     body: (<span>0.10553257</span>),
+                },
+            ],
+        },
+    ],
+};
+
+export const tradersTable = {
+    name: 'traders-table',
+    head: [
+        { title: 'Nick' },
+        { title: 'Followers' },
+        { title: 'Last 7 days' },
+        { title: 'Last 14 days' },
+        { title: 'Last 30 days' },
+        { title: 'Last 3 months' },
+        { title: 'Last 6 months' },
+        { title: 'All' },
+    ],
+    bodyClass: 'table__body--text-left table__body--traders-table',
+    headClass: 'table__head--text-left table__head--padding-bottom-35 table__head--traders-table',
+    body: [
+        {
+            id: 1,
+            trClass: '',
+            columns: [
+                {
+                    tdClass: 'table__td--padding-18-0 table__td--mulled-wine table__td--font-size-18',
+                    body: (
+                        <div className="table--center-elem">
+                            <span className="table__circle-img">
+                                <CircleImage avatarImg={Avatar1} size={CircleImage.size.BIG} />
+                            </span>
+                            <span className="table__fullname">Emma May</span>
+                            <Badge text="Lvl 1" color={Badge.color.GREEN} />
+                        </div>
+                    ),
+                },
+                {
+                    tdClass: '',
+                    body: (<span>325</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+5%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+15%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+15%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+15%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+15%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+15%</span>),
+                },
+            ],
+        },
+        {
+            id: 2,
+            trClass: '',
+            columns: [
+                {
+                    tdClass: 'table__td--padding-18-0 table__td--mulled-wine table__td--font-size-18',
+                    body: (
+                        <div className="table--center-elem">
+                            <span className="table__circle-img">
+                                <CircleImage avatarImg={Avatar2} size={CircleImage.size.BIG} />
+                            </span>
+                            <span className="table__fullname">Andrew Philips</span>
+                            <Badge text="Lvl 2" color={Badge.color.GREEN_BLUE} />
+                        </div>
+                    ),
+                },
+                {
+                    tdClass: '',
+                    body: (<span>248</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+5%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+13%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+11%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+12%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+16%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+15%</span>),
+                },
+            ],
+        },
+        {
+            id: 3,
+            trClass: '',
+            columns: [
+                {
+                    tdClass: 'table__td--padding-18-0 table__td--mulled-wine table__td--font-size-18',
+                    body: (
+                        <div className="table--center-elem">
+                            <span className="table__circle-img">
+                                <CircleImage avatarImg={Avatar3} size={CircleImage.size.BIG} />
+                            </span>
+                            <span className="table__fullname">Alice Mayers</span>
+                            <Badge text="Lvl 3" color={Badge.color.BLUE} />
+                        </div>
+                    ),
+                },
+                {
+                    tdClass: '',
+                    body: (<span>150</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+4%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+12%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+10%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+9%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+10%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+14%</span>),
+                },
+            ],
+        },
+        {
+            id: 4,
+            trClass: '',
+            columns: [
+                {
+                    tdClass: 'table__td--padding-18-0 table__td--mulled-wine table__td--font-size-18',
+                    body: (
+                        <div className="table--center-elem">
+                            <span className="table__circle-img">
+                                <CircleImage avatarImg={Avatar4} size={CircleImage.size.BIG} />
+                            </span>
+                            <span className="table__fullname">Paul Miller</span>
+                            <Badge text="Lvl 1" color={Badge.color.GREEN} />
+                        </div>
+                    ),
+                },
+                {
+                    tdClass: '',
+                    body: (<span>140</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+3%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+19%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+25%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+13%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+9%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+12%</span>),
+                },
+            ],
+        },
+        {
+            id: 5,
+            trClass: '',
+            columns: [
+                {
+                    tdClass: 'table__td--padding-18-0 table__td--mulled-wine table__td--font-size-18',
+                    body: (
+                        <div className="table--center-elem">
+                            <span className="table__circle-img">
+                                <CircleImage avatarImg={Avatar5} size={CircleImage.size.BIG} />
+                            </span>
+                            <span className="table__fullname">Peter Larsson</span>
+                            <Badge text="Lvl 4" color={Badge.color.ROYAL_BLUE} />
+                        </div>
+                    ),
+                },
+                {
+                    tdClass: '',
+                    body: (<span>135</span>),
+                },
+                {
+                    tdClass: 'table__td--coral-red',
+                    body: (<span>-1%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+7%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+11%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+5%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+18%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+8%</span>),
+                },
+            ],
+        },
+        {
+            id: 6,
+            trClass: '',
+            columns: [
+                {
+                    tdClass: 'table__td--padding-18-0 table__td--mulled-wine table__td--font-size-18',
+                    body: (
+                        <div className="table--center-elem">
+                            <span className="table__circle-img">
+                                <CircleImage avatarImg={Avatar6} size={CircleImage.size.BIG} />
+                            </span>
+                            <span className="table__fullname">Andy Johhanson</span>
+                            <Badge text="Lvl 5" color={Badge.color.LOGAN} />
+                        </div>
+                    ),
+                },
+                {
+                    tdClass: '',
+                    body: (<span>120</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+2%</span>),
+                },
+                {
+                    tdClass: 'table__td--coral-red',
+                    body: (<span>-2%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+12%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+10%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+8%</span>),
+                },
+                {
+                    tdClass: 'table__td--forest-green',
+                    body: (<span>+6%</span>),
                 },
             ],
         },

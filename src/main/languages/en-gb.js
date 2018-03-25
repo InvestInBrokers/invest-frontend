@@ -10,6 +10,8 @@ export default {
         successful_traders: 'Sucessful traders',
         deposit: 'Deposit',
         profit_this_month: 'Profit this month',
+        prev: 'Prev',
+        next: 'Next',
     },
     periods: {
         week: 'Week',

@@ -40,7 +40,6 @@ class Header extends Component {
                                 </li>
                                 <li>
                                     <NavLink
-                                        exact
                                         className="header__menu-item"
                                         activeClassName="header__menu-item--active"
                                         to="/markets"
@@ -48,8 +47,14 @@ class Header extends Component {
                                         <Translate value="header.menu.markets" />
                                     </NavLink>
                                 </li>
-                                <li className="header__menu-item" onClick={() => { onSetModalStatus(true); }}>
-                                    <Translate value="header.menu.traders" />
+                                <li className="header__menu-item">
+                                    <NavLink
+                                        className="header__menu-item"
+                                        activeClassName="header__menu-item--active"
+                                        to="/traders"
+                                    >
+                                        <Translate value="header.menu.traders" />
+                                    </NavLink>
                                 </li>
                                 <li className="header__menu-item" onClick={() => { onSetModalStatus(true); }}>
                                     <Translate value="header.menu.support" />
