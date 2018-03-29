@@ -1,22 +1,18 @@
 @import '../../styles/colors';
-@import '../../styles/font-weights';
+@import '../../styles/mixins';
 
 .markets {
   &__content {
-    background: $white;
-    border-radius: 4px;
-    box-shadow: 0 0 24px 6px rgba(130, 129, 147, 0.06);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 45px;
-    padding: 35px 0;
+    @include content;
   }
 
   &__pagination {
-    background: linear-gradient(to bottom, #f9f9fd 0%, $white 15px);
-    border-top: 1px solid $white-lilac;
-    padding: 35px 35px 0;
-    width: 100%;
+    @include content-pagination;
+  }
+
+  &__change-column {
+    display: flex;
+    justify-content: flex-end;
+    width: 43%;
   }
 }

@@ -12,6 +12,7 @@ export default {
         profit_this_month: 'Profit this month',
         prev: 'Prev',
         next: 'Next',
+        followers: 'Followers',
     },
     periods: {
         week: 'Week',
@@ -31,7 +32,7 @@ export default {
             head: {
                 followers: 'Followers',
                 last_30_days: 'Last 30 days',
-            }
+            },
         },
     },
 };

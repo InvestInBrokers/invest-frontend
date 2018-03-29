@@ -1,12 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Translate from '../Translate';
 
 import './pagination.scss';
 
-const Traders = () => (
+const Traders = ({ onSetModalStatus }) => (
     <div className="pagination">
-        <ul className="pagination__list">
+        <ul className="pagination__list" onClick={() => { onSetModalStatus(true); }}>
             <li className="pagination__item">
                 <Translate value="common.prev" />
             </li>
@@ -37,5 +38,9 @@ const Traders = () => (
         </ul>
     </div>
 );
+
+Traders.propTypes = {
+    onSetModalStatus: PropTypes.func.isRequired,
+};
 
 export default Traders;

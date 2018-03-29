@@ -4,7 +4,7 @@
 .tiles {
   background: $white;
   border-radius: 4px;
-  box-shadow: 0 0 24px 6px rgba(130, 129, 147, 0.06);
+  box-shadow: 0 0 24px 6px rgba($waterloo, 0.06);
   display: flex;
   flex-direction: column;
   margin-bottom: 24px;
@@ -29,7 +29,7 @@
   }
 
   &__more {
-    background: linear-gradient(to bottom, #f9f9fd 0%, $white 37%);
+    background: linear-gradient(to bottom, $white-lilac 0%, $white 37%);
     border-top: 1px solid $white-lilac;
     color: $royal-blue;
     font-size: 12px;

@@ -1,5 +1,7 @@
+@import '../../styles/colors';
+
 .unavailable-feature {
-  background: #fff;
+  background: $white;
   border-radius: 3px;
   font-size: 20px;
   padding: 60px;

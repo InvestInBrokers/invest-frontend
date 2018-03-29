@@ -28,7 +28,7 @@ const Dashboard = () => (
                     <span>242</span>
                 </div>
                 <div className="dashboard__followers-text">
-                    <span>Followers</span>
+                    <Translate value="common.followers" />
                 </div>
             </div>
         </PageTitle>

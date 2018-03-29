@@ -36,10 +36,8 @@
       border-bottom: 1px solid $white-lilac;
       font-size: 15px;
 
-      th {
-        &:first-child {
-          padding-left: 40px;
-        }
+      th:first-child {
+        padding-left: 40px;
       }
     }
 
@@ -47,10 +45,8 @@
       border-bottom: 1px solid $white-lilac;
       font-size: 15px;
 
-      th {
-        &:first-child {
-          padding-left: 40px;
-        }
+      th:first-child {
+        padding-left: 40px;
       }
     }
   }
@@ -65,22 +61,18 @@
     }
 
     &--markets-table {
-      background: linear-gradient(to bottom, #f9f9fd 0%, $white 25px);
+      background: linear-gradient(to bottom, $white-lilac 0%, $white 25px);
 
-      td {
-        &:first-child {
-          padding-left: 40px;
-        }
+      td:first-child {
+        padding-left: 40px;
       }
     }
 
     &--traders-table {
-      background: linear-gradient(to bottom, #f9f9fd 0%, $white 25px);
+      background: linear-gradient(to bottom, $white-lilac 0%, $white 25px);
 
-      td {
-        &:first-child {
-          padding-left: 40px;
-        }
+      td:first-child {
+        padding-left: 40px;
       }
     }
   }
@@ -89,7 +81,7 @@
     border-bottom: 1px solid $white-lilac;
 
     &:last-child {
-      border: 0 solid #000;
+      border: 0 solid $black;
     }
   }
 
@@ -97,63 +89,30 @@
     padding: 5px 0;
     vertical-align: middle;
 
-    &--padding-16-0 {
-      padding: 16px 0;
-    }
+    &--padding-15-0 { padding: 15px 0;}
+    &--padding-16-0 { padding: 16px 0;}
+    &--padding-22-0 { padding: 22px 0;}
 
-    &--padding-18-0 {
-      padding: 16px 0;
-    }
+    &--text-left { text-align: left; }
 
-    &--padding-22-0 {
-      padding: 22px 0;
-    }
+    &--font-size-12 { font-size: 12px;}
+    &--font-size-18 { font-size: 18px;}
 
-    &--mulled-wine {
-      color: $mulled-wine;
-    }
+    &--green { color: $forest-green; fill: $forest-green;}
+    &--blue { color: $cornflower-blue; fill: $cornflower-blue;}
+    &--forest-green { color: $forest-green; fill: $forest-green;}
+    &--coral-red { color: $coral-red; fill: $coral-red;}
+    &--mulled-wine { color: $mulled-wine; fill: $mulled-wine;}
 
-    &--text-left {
-      text-align: left;
-    }
-
-    &--font-size-12 {
-      font-size: 12px;
-    }
-
-    &--font-size-18 {
-      font-size: 18px;
-    }
-
-    &--green {
-      color: $forest-green;
-    }
-
-    &--blue {
-      color: $cornflower-blue;
-    }
-
-    &--forest-green {
-      color: $forest-green;
-      fill: $forest-green;
-    }
-
-    &--coral-red {
-      color: $coral-red;
-      fill: $coral-red;
-    }
-
-    &--width-15 {
-      width: 15%;
-    }
-
-    &--width-17 {
-      width: 17%;
-    }
-
-    &--width-28 {
-      width: 28%;
-    }
+    &--width-6 { width: 6%;}
+    &--width-10 { width: 10%;}
+    &--width-12 { width: 12%;}
+    &--width-13 { width: 13%;}
+    &--width-15 { width: 15%;}
+    &--width-16 { width: 16%;}
+    &--width-17 { width: 17%;}
+    &--width-28 { width: 28%;}
+    &--width-31 { width: 31%;}
   }
 
   &__circle-img {

@@ -19,7 +19,7 @@
   &__followers-number {
     background: linear-gradient(0, $cornflower-blue 0%, $cornflower-blue-dark 100%);
     border-radius: 4px 0 0 4px;
-    box-shadow: 0 2px 6.65px 0.35px rgba(52, 84, 245, 0.3);
+    box-shadow: 0 2px 6.65px 0.35px rgba($royal-blue, 0.3);
     color: $white;
     padding: 8px 9px;
   }

@@ -2,6 +2,8 @@
 @import '../../styles/font-weights';
 
 .pagination {
+  display: flex;
+
   &__list {
     display: flex;
   }

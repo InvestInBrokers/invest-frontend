@@ -1,0 +1,19 @@
+@import './colors';
+
+@mixin content {
+  background: $white;
+  border-radius: 4px;
+  box-shadow: 0 0 24px 6px rgba($waterloo, 0.06);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 45px;
+  padding: 31px 0 42px;
+}
+
+@mixin content-pagination {
+  background: linear-gradient(to bottom, $white-lilac 0%, $white 15px);
+  border-top: 1px solid $white-lilac;
+  padding: 37px 35px 0;
+  width: 100%;
+}

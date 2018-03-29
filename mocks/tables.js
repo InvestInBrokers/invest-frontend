@@ -274,27 +274,27 @@ export const marketsTable = {
             trClass: '',
             columns: [
                 {
-                    tdClass: 'table__td--padding-22-0 table__td--blue',
+                    tdClass: 'table__td--padding-22-0 table__td--blue table__td--width-16',
                     body: (<span className="BTC">BTC-USDT</span>),
                 },
                 {
-                    tdClass: 'table__td--mulled-wine',
+                    tdClass: 'table__td--mulled-wine table__td--width-15',
                     body: (<span>Ethereum</span>),
                 },
                 {
-                    tdClass: 'table__td--mulled-wine',
+                    tdClass: 'table__td--mulled-wine table__td--width-13',
                     body: (<span>4285.161</span>),
                 },
                 {
-                    tdClass: 'table__td--forest-green',
-                    body: (<span>4.2 <ArrowUp /></span>),
+                    tdClass: 'table__td--forest-green table__td--width-12',
+                    body: (<span className="markets__change-column"><span>4.2 <ArrowUp /></span></span>),
                 },
                 {
-                    tdClass: 'table__td--mulled-wine',
+                    tdClass: 'table__td--mulled-wine table__td--width-15',
                     body: (<span>0.11236836</span>),
                 },
                 {
-                    tdClass: 'table__td--mulled-wine',
+                    tdClass: 'table__td--mulled-wine table__td--width-15',
                     body: (<span>0.11419409</span>),
                 },
                 {
@@ -321,7 +321,7 @@ export const marketsTable = {
                 },
                 {
                     tdClass: 'table__td--coral-red',
-                    body: (<span>-18.2 <ArrowDown /></span>),
+                    body: (<span className="markets__change-column"><span>-18.2 <ArrowDown /></span></span>),
                 },
                 {
                     tdClass: 'table__td--mulled-wine',
@@ -355,7 +355,7 @@ export const marketsTable = {
                 },
                 {
                     tdClass: 'table__td--coral-red',
-                    body: (<span>-1.1 <ArrowDown /></span>),
+                    body: (<span className="markets__change-column"><span>-1.1 <ArrowDown /></span></span>),
                 },
                 {
                     tdClass: 'table__td--mulled-wine',
@@ -389,7 +389,7 @@ export const marketsTable = {
                 },
                 {
                     tdClass: 'table__td--coral-red',
-                    body: (<span>-10.2 <ArrowDown /></span>),
+                    body: (<span className="markets__change-column"><span>-10.2 <ArrowDown /></span></span>),
                 },
                 {
                     tdClass: 'table__td--mulled-wine',
@@ -423,7 +423,7 @@ export const marketsTable = {
                 },
                 {
                     tdClass: 'table__td--forest-green',
-                    body: (<span>0.3 <ArrowUp /></span>),
+                    body: (<span className="markets__change-column"><span>0.3 <ArrowUp /></span></span>),
                 },
                 {
                     tdClass: 'table__td--mulled-wine',
@@ -457,7 +457,7 @@ export const marketsTable = {
                 },
                 {
                     tdClass: 'table__td--forest-green',
-                    body: (<span>1.5 <ArrowUp /></span>),
+                    body: (<span className="markets__change-column"><span>1.5 <ArrowUp /></span></span>),
                 },
                 {
                     tdClass: 'table__td--mulled-wine',
@@ -491,7 +491,7 @@ export const marketsTable = {
                 },
                 {
                     tdClass: 'table__td--coral-red',
-                    body: (<span>-4.2 <ArrowDown /></span>),
+                    body: (<span className="markets__change-column"><span>-4.2 <ArrowDown /></span></span>),
                 },
                 {
                     tdClass: 'table__td--mulled-wine',
@@ -525,7 +525,7 @@ export const marketsTable = {
                 },
                 {
                     tdClass: 'table__td--forest-green',
-                    body: (<span>0.1 <ArrowUp /></span>),
+                    body: (<span className="markets__change-column"><span>0.1 <ArrowUp /></span></span>),
                 },
                 {
                     tdClass: 'table__td--mulled-wine',
@@ -564,7 +564,7 @@ export const tradersTable = {
             trClass: '',
             columns: [
                 {
-                    tdClass: 'table__td--padding-18-0 table__td--mulled-wine table__td--font-size-18',
+                    tdClass: 'table__td--padding-15-0 table__td--mulled-wine table__td--font-size-18 table__td--width-31',
                     body: (
                         <div className="table--center-elem">
                             <span className="table__circle-img">
@@ -576,31 +576,31 @@ export const tradersTable = {
                     ),
                 },
                 {
-                    tdClass: '',
+                    tdClass: 'table__td--width-10',
                     body: (<span>325</span>),
                 },
                 {
-                    tdClass: 'table__td--forest-green',
+                    tdClass: 'table__td--forest-green table__td--width-10',
                     body: (<span>+5%</span>),
                 },
                 {
-                    tdClass: 'table__td--forest-green',
+                    tdClass: 'table__td--forest-green table__td--width-10',
                     body: (<span>+15%</span>),
                 },
                 {
-                    tdClass: 'table__td--forest-green',
+                    tdClass: 'table__td--forest-green table__td--width-10',
                     body: (<span>+15%</span>),
                 },
                 {
-                    tdClass: 'table__td--forest-green',
+                    tdClass: 'table__td--forest-green table__td--width-10',
                     body: (<span>+15%</span>),
                 },
                 {
-                    tdClass: 'table__td--forest-green',
+                    tdClass: 'table__td--forest-green table__td--width-10',
                     body: (<span>+15%</span>),
                 },
                 {
-                    tdClass: 'table__td--forest-green',
+                    tdClass: 'table__td--forest-green table__td--width-6',
                     body: (<span>+15%</span>),
                 },
             ],
@@ -610,7 +610,7 @@ export const tradersTable = {
             trClass: '',
             columns: [
                 {
-                    tdClass: 'table__td--padding-18-0 table__td--mulled-wine table__td--font-size-18',
+                    tdClass: 'table__td--padding-15-0 table__td--mulled-wine table__td--font-size-18 table__td--width-31',
                     body: (
                         <div className="table--center-elem">
                             <span className="table__circle-img">
@@ -656,7 +656,7 @@ export const tradersTable = {
             trClass: '',
             columns: [
                 {
-                    tdClass: 'table__td--padding-18-0 table__td--mulled-wine table__td--font-size-18',
+                    tdClass: 'table__td--padding-15-0 table__td--mulled-wine table__td--font-size-18 table__td--width-31',
                     body: (
                         <div className="table--center-elem">
                             <span className="table__circle-img">
@@ -702,7 +702,7 @@ export const tradersTable = {
             trClass: '',
             columns: [
                 {
-                    tdClass: 'table__td--padding-18-0 table__td--mulled-wine table__td--font-size-18',
+                    tdClass: 'table__td--padding-15-0 table__td--mulled-wine table__td--font-size-18 table__td--width-31',
                     body: (
                         <div className="table--center-elem">
                             <span className="table__circle-img">
@@ -748,7 +748,7 @@ export const tradersTable = {
             trClass: '',
             columns: [
                 {
-                    tdClass: 'table__td--padding-18-0 table__td--mulled-wine table__td--font-size-18',
+                    tdClass: 'table__td--padding-15-0 table__td--mulled-wine table__td--font-size-18 table__td--width-31',
                     body: (
                         <div className="table--center-elem">
                             <span className="table__circle-img">
@@ -794,7 +794,7 @@ export const tradersTable = {
             trClass: '',
             columns: [
                 {
-                    tdClass: 'table__td--padding-18-0 table__td--mulled-wine table__td--font-size-18',
+                    tdClass: 'table__td--padding-15-0 table__td--mulled-wine table__td--font-size-18 table__td--width-31',
                     body: (
                         <div className="table--center-elem">
                             <span className="table__circle-img">
