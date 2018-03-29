@@ -279,7 +279,7 @@ export const marketsTable = {
                 },
                 {
                     tdClass: 'table__td--mulled-wine table__td--width-15',
-                    body: (<span>Ethereum</span>),
+                    body: (<span>Bitcoin</span>),
                 },
                 {
                     tdClass: 'table__td--mulled-wine table__td--width-13',
